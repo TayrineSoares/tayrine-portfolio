@@ -1,5 +1,6 @@
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Hero from './components/Hero';
 import './styles/global.css';
 
 const App = () => {
@@ -11,9 +12,7 @@ const App = () => {
       </header>
 
       <main>
-        <section id="hero">
-          <h2>Hero</h2>
-        </section>
+        <Hero />
 
         <section id="projects">
           <h2>Projects</h2>

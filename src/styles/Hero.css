@@ -1,0 +1,160 @@
+/* =========================
+   HERO SECTION
+========================= */
+#hero {
+  padding: 4rem 1rem;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+/* =========================
+   LEFT: TEXT
+========================= */
+.hero-text {
+  flex: 1;
+}
+
+.intro {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.hero-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  max-width: 480px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* =========================
+   FLIP CARD (SKILLS)
+========================= */
+.skill-card {
+  width: 90%;
+  height: 140px;
+  perspective: 1000px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.skill-card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-front p {
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  flex-direction: column;
+  padding: 0.6rem;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 20px;
+}
+
+.badge {
+  background-color: white;
+  color: var(--accent);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  white-space: nowrap;
+  border: 1px solid var(--accent);
+}
+
+/* =========================
+   RIGHT: IMAGE
+========================= */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    order: 2;
+  }
+
+  .hero-image {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+
+  .hero-image img {
+    max-width: 200px;
+  }
+
+  .skill-card {
+    margin: 1rem auto 2rem;
+  }
+}
