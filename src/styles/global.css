@@ -1,51 +1,119 @@
-/* colors, fonts, base layout */
+/* ============================================
+   GLOBAL STYLES
+   - Font: Plus Jakarta Sans
+   - Color scheme: light (default) + dark (auto)
+============================================ */
 
+/* ================================
+   1. COLOR VARIABLES
+   - Light by default
+   - Auto switch to dark using prefers-color-scheme
+================================ */
+:root {
+  /* Light mode */
+  --bg: #ffffff;      /* clean white background */
+  --fg: #1a1a1a;      /* near-black text for strong contrast */
+  --muted: #6c6c6c;   /* softer gray for secondary text */
+  --line: #e6e6e6;    /* light gray borders/dividers */
+  --accent: #007f73;  /* teal-green accent (modern + calm) */
+}
 
-/* Reset default browser styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark mode */
+    --bg: #0f1115;     /* deep grayish blue background */
+    --fg: #eaeaea;     /* light text */
+    --muted: #9a9a9a;  /* muted gray for secondary text */
+    --line: #242834;   /* subtle divider lines */
+    --accent: #72d6b6; /* minty accent for dark mode */
+  }
+}
+
+/* ================================
+BASE RESET
+Remove default margins/paddings
+Set box-sizing
+================================ */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Base font and colors */
+/* ================================
+TYPOGRAPHY
+Global font & base text styles
+================================ */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff; /* White background */
-  color: #222222;            /* Dark text */
-  line-height: 1.5;          /* Comfortable reading */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg);
+  color: var(--fg);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Headings */
 h1, h2 {
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-/* Layout container */
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* ================================
+LAYOUT HELPERS
+Container and section spacing
+================================ */
 .container {
-  max-width: 1000px;   /* Keeps content from stretching too wide */
-  margin: 0 auto;      /* Centers content */
-  padding: 1rem;       /* Space inside */
+  max-width: 1000px;   /* keeps content centered and narrow */
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-/* Header */
+/* Basic section spacing */
+section {
+  padding: 2rem 1rem;
+  border-top: 1px solid var(--line);
+}
+
+/* ================================
+   HEADER & FOOTER
+================================ */
 header {
-  background-color: #f5f5f5; /* Light gray header */
-  border-bottom: 1px solid #ddd;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-/* Footer */
 footer {
-  background-color: #f5f5f5;
-  border-top: 1px solid #ddd;
+  background-color: var(--bg);
+  border-top: 1px solid var(--line);
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  color: #555;
+  color: var(--muted);
 }
 
-/* Sections */
-section {
-  padding: 2rem 1rem;
-  border-top: 1px solid #eee; /* Light divider between sections */
+/* ================================
+   6. UTILITIES
+   - Quick helper classes
+================================ */
+.muted {
+  color: var(--muted);
+}
+
+.accent {
+  color: var(--accent);
 }
