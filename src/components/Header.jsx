@@ -12,8 +12,10 @@ const Header = () => {
   return (
     <header>
       <div className="container header-container">
-        {/* PLACEHOLDER FOR LOGO LATER */}
-        <a href="#" className="logo" onClick={closeMenu}>TS</a>
+        
+        <a href="#hero" className="logo" onClick={closeMenu}>
+          Tayrine Soares
+        </a>
 
         {/* Mobile togglebutton */}
         <button 

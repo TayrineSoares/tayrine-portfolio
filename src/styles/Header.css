@@ -6,13 +6,20 @@
   padding: 1rem;
 }
 
-/* Logo */
 .logo {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.25rem;
-  color: var(--fg);
+  letter-spacing: -0.5px;   /* subtle tightening for a designer look */
   text-decoration: none;
+  color: var(--fg);
+  transition: color 0.2s ease;
 }
+
+.logo:hover {
+  color: var(--accent);
+  text-decoration: none;  
+}
+
 
 /* Navigation (desktop) */
 .nav-list {
