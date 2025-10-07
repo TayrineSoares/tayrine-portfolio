@@ -1,0 +1,51 @@
+/* colors, fonts, base layout */
+
+
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base font and colors */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #222222;            /* Dark text */
+  line-height: 1.5;          /* Comfortable reading */
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Layout container */
+.container {
+  max-width: 1000px;   /* Keeps content from stretching too wide */
+  margin: 0 auto;      /* Centers content */
+  padding: 1rem;       /* Space inside */
+}
+
+/* Header */
+header {
+  background-color: #f5f5f5; /* Light gray header */
+  border-bottom: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Sections */
+section {
+  padding: 2rem 1rem;
+  border-top: 1px solid #eee; /* Light divider between sections */
+}

@@ -1,5 +1,7 @@
+import './styles/global.css';
+
 const App = () => {
-  
+
   return (
     <>
       <header>
