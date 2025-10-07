@@ -15,7 +15,7 @@
   --fg: #1a1a1a;      /* near-black text for strong contrast */
   --muted: #6c6c6c;   /* softer gray for secondary text */
   --line: #e6e6e6;    /* light gray borders/dividers */
-  --accent: #8F6B46;  /* darker warm sand */
+  --accent: #CC8F2E; 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,7 +25,7 @@
     --fg: #eaeaea;     /* light text */
     --muted: #9a9a9a;  /* muted gray for secondary text */
     --line: #242834;   /* subtle divider lines */
-    --accent: #B8966D; /* slightly lighter for dark mode contrast */
+    --accent: #CC8F2E; 
   }
 }
 
@@ -50,6 +50,7 @@ body {
   color: var(--fg);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 /* Headings */

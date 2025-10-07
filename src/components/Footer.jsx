@@ -2,7 +2,6 @@ import '../styles/Footer.css';
 import { Mail, Github, Linkedin, FileText } from 'lucide-react';
 
 
-
 const Footer = () => {
   const year = new Date().getFullYear();
 
@@ -39,7 +38,7 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/tayrinesoares"
+            href="https://www.linkedin.com/in/tayrine-soares"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"

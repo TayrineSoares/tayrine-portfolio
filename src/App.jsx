@@ -1,6 +1,7 @@
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Projects from './components/Projects';
 import './styles/global.css';
 
 const App = () => {
@@ -14,9 +15,7 @@ const App = () => {
       <main>
         <Hero />
 
-        <section id="projects">
-          <h2>Projects</h2>
-        </section>
+        <Projects />
 
         <section id="about">
           <h2>About</h2>
