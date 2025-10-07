@@ -15,7 +15,7 @@
   --fg: #1a1a1a;      /* near-black text for strong contrast */
   --muted: #6c6c6c;   /* softer gray for secondary text */
   --line: #e6e6e6;    /* light gray borders/dividers */
-  --accent: #007f73;  /* teal-green accent (modern + calm) */
+  --accent: #8F6B46;  /* darker warm sand */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,7 +25,7 @@
     --fg: #eaeaea;     /* light text */
     --muted: #9a9a9a;  /* muted gray for secondary text */
     --line: #242834;   /* subtle divider lines */
-    --accent: #72d6b6; /* minty accent for dark mode */
+    --accent: #B8966D; /* slightly lighter for dark mode contrast */
   }
 }
 

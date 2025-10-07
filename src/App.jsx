@@ -1,3 +1,4 @@
+import Header from './components/Header';
 import './styles/global.css';
 
 const App = () => {
@@ -5,7 +6,7 @@ const App = () => {
   return (
     <>
       <header>
-        <h1>Tayrine Portfolio</h1>
+        <Header />
       </header>
 
       <main>
