@@ -1,3 +1,4 @@
+import Footer from './components/Footer';
 import Header from './components/Header';
 import './styles/global.css';
 
@@ -28,7 +29,7 @@ const App = () => {
       </main>
 
       <footer>
-        <small>© {new Date().getFullYear()} Tayrine Soares</small>
+        <Footer />
       </footer>
     </>
   );

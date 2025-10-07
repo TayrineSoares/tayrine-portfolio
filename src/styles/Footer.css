@@ -1,0 +1,48 @@
+/* ================================
+   FOOTER STYLES
+   - Clean bar with small text and links
+   - Uses global color variables
+================================ */
+
+footer {
+  border-top: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.footer-container {
+  /* horizontal layout, wrap on small screens */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Right-side links */
+.footer-links {
+  list-style: none;      /* remove bullets */
+  display: flex;
+  gap: 2rem;             /* spacing between links */
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links a {
+  color: var(--fg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent);  /* subtle hover */
+}
+
+/* Stack neatly on very small screens */
+@media (max-width: 520px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
