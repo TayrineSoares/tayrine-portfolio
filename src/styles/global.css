@@ -76,7 +76,7 @@ LAYOUT HELPERS
 Container and section spacing
 ================================ */
 .container {
-  max-width: 1000px;   /* keeps content centered and narrow */
+  max-width: 95vw;   /* keeps content centered and narrow */
   margin: 0 auto;
   padding: 1rem;
 }
