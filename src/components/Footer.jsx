@@ -8,7 +8,7 @@ const Footer = () => {
 
 
   return (
-   <footer>
+   <div>
     <div className="container footer-container" role="contentinfo">
       {/* small note */}
       <small className="muted">
@@ -65,7 +65,7 @@ const Footer = () => {
 
     </div>
 
-   </footer>
+   </div>
   )
 };
 

@@ -17,6 +17,9 @@ const Hero = () => {
           <p className="hero-description">
             I love building clean, responsive web applications that bring ideas to life.
           </p>
+          <p className="hero-description" >
+            Before moving into tech, I worked in <strong>Civil Engineering</strong> and <strong>Hospitality</strong> — solving problems, juggling projects, staying organized, and keeping cool under pressure. <br/> Everything helped me build a <strong>structured way of thinking</strong> that I now bring into development.
+          </p>
 
           {/* Flip Card */}
           <div 
