@@ -66,6 +66,12 @@ const Projects = () => {
               ))}
                         
             </ul>
+            <div className="project__tech">
+              {p.tech.map((tech, i) => 
+              <span key={i} className="project__tech-badge">
+                {tech}
+              </span>)}
+            </div>
 
             <div className="project__links">
               {p.live && (
