@@ -1,6 +1,7 @@
 
 import "../styles/Projects.css";
 import { ExternalLink, Github } from "lucide-react";
+import Carousel from "./Carousel";
 
 const projects = [
   {
@@ -14,7 +15,7 @@ const projects = [
       "Auth, DB, and storage with Supabase; Deployed on Vercel; Version control with Git.",
     ],
     tech: ["React", "Node.js", "Supabase", "Stripe", "PostgreSQL", "Vercel", "CSS","Git"],
-    images: ["/images/earth.gif","/images/earth-tablet.png"],
+    images: ["/images/earth.gif","/images/earth-tablet.png", "/images/earth-phone.png"],
     live: "https://www.earthtableco.ca/",
     code: "https://github.com/TayrineSoares/earth-table"
   },
@@ -32,7 +33,7 @@ const projects = [
     code: "https://github.com/TayrineSoares/byte-to-bite"
   },
   {
-    title:"Byte to Bite Mobile - A React Native Expo Project",
+    title:"Mobile Byte to Bite - A React Native Expo Project",
     summary:"The mobile version of our fun recipe finder where users can post, save, and share their favorite recipes.", 
     details:[
       "Browse recipes by entering available ingredients, powered by the Spoonacular API.", 
@@ -40,7 +41,7 @@ const projects = [
       "Bookmark recipes with real-time updates from Convex", 
       "Clean, responsive UI with recipe detail modals", ],
     tech: ["React Native", "Convex + Clerk", "Git", "CSS" ],
-    images: ["/images/byte-to-bite-mobile-commenting.gif", "/images/byte-to-bite-mobile-favorites.gif", "/images/byte-to-bite-mobile-search.gif"
+    images: ["/images/byte-to-bite-mobile-favorites.gif", "/images/byte-to-bite-mobile-commenting.gif", "/images/byte-to-bite-mobile-search.gif"
 
     ],
     code: "https://github.com/TayrineSoares/byte-to-bite-mobile",
@@ -110,19 +111,7 @@ const Projects = () => {
                 )}
               </div>
               {p.images?.length > 0 && (
-              <div className="project-media">
-                {p.images.map((imgSrc, i) => (
-                  <img
-                    key={i}
-                    src={imgSrc}
-                    alt={`${p.title} screenshot ${i + 1}`}
-                    loading="lazy"
-                    decoding="async"
-                    className="project-img"
-                  />
-                ))}
-      
-              </div>
+                <Carousel images={p.images} title={p.title} />
               )}
               
             </li>

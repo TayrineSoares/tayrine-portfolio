@@ -1,0 +1,95 @@
+/* =========================
+   CAROUSEL BASE
+========================= */
+.carousel {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.carousel-viewport {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 12px;
+  outline: none;
+}
+
+.carousel-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track {
+  display: flex;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+.carousel-slide:last-child {
+  padding-right: 0;
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;     /* no cropping */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: block;
+  background: #fff;
+  margin: 0 auto;
+}
+
+/* Make images a bit smaller on larger screens */
+@media (min-width: 700px) {
+  .carousel-slide img {
+    max-height: 500px; /* adjust this value as needed */
+  }
+}
+
+/* =========================
+   NAVIGATION BUTTONS
+========================= */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+  opacity: 0.9;
+  z-index: 2;
+}
+
+.carousel-btn:hover {
+  transform: translateY(-50%) scale(1.05);
+  opacity: 1;
+  background: #e57c00; /* slightly darker accent */
+}
+
+.carousel-btn--prev {
+  left: 8px;
+}
+
+.carousel-btn--next {
+  right: 8px;
+}
+
+
+@media (max-width: 500px) {
+  .carousel-slide img { max-height: 320px; } /* keeps images from towering */
+  .carousel-btn { width: 26px; height: 26px; } /* smaller arrows */
+}
