@@ -3,7 +3,7 @@ import "../styles/Projects.css";
 
 const projects = [
   {
-    title: "Earth Table Co",
+    title: "Earth Table Co - E-commerce Platform",
     summary:
       "A full-stack e-commerce platform for a holistic meal prep business with secure payments and an admin workflow.",
     details: [
@@ -31,7 +31,7 @@ const projects = [
     code: "https://github.com/TayrineSoares/byte-to-bite"
   },
   {
-    title:"Byte to Bite - A React Native Expo Project",
+    title:"Byte to Bite Mobile - A React Native Expo Project",
     summary:"The mobile version of our fun recipe finder where users can post, save, and share their favorite recipes.", 
     details:[
       "Browse recipes by entering available ingredients, powered by the Spoonacular API.", 
@@ -53,7 +53,50 @@ const Projects = () => {
   
   return (
     <section id="projects" className="projects">
-      <h1>Projects section </h1>
+      <h2 className="projects__title">Projects</h2>
+
+      <ul className="projects__list">
+        {projects.map((p) => (
+          <li key={p.title} className="project">
+            <h3 className="project__name">{p.title}</h3>
+            <p className="project__summary">{p.summary}</p>
+            <ul className="project__details">
+              {p.details.map((pdetail, i) => (
+                <li key={i}>{pdetail}</li>
+              ))}
+                        
+            </ul>
+
+            <div className="project__links">
+              {p.live && (
+                <a 
+                href={p.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project__link"
+                aria-label={`Open ${p.title} live site`}
+                >
+                  Live
+                </a>
+              )}
+
+              {p.code && (
+                <a
+                href={p.code}
+                target="__blank"
+                rel="noopener noreferrer"
+                className="project__link"
+                aria-label={`Open ${p.title} source code`}
+
+                >
+                  Code
+                </a>
+              )}
+            </div>
+            
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };
