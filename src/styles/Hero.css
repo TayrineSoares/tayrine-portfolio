@@ -2,7 +2,7 @@
    HERO SECTION
 ========================= */
 #hero {
-  padding: 4rem 1rem;
+  padding: 4rem 4rem;
 }
 
 .hero-container {
@@ -50,7 +50,7 @@
 ========================= */
 .skill-card {
   width: 90%;
-  height: 140px;
+  height: 160px;
   perspective: 1000px;
   cursor: pointer;
   margin-bottom: 1.5rem;

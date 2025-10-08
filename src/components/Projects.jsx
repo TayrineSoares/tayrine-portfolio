@@ -1,5 +1,6 @@
 
 import "../styles/Projects.css";
+import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
@@ -10,7 +11,7 @@ const projects = [
       "Responsive and intuitive design, featuring product catalogue with filterable menu items in clear categories",
       "Admin dashboard to create/edit products, manage availability, pricing, and inventory; view and fulfill orders",
       "Smooth cart & checkout flow with Stripe integration",
-      "Auth, DB, and storage with Supabase; deployed on Vercel; version control with Git.",
+      "Auth, DB, and storage with Supabase; Deployed on Vercel; Version control with Git.",
     ],
     tech: ["React", "Node.js", "Supabase", "Stripe", "PostgreSQL", "Vercel", "CSS","Git"],
     images: ["/images/earth.gif","/images/earth-tablet.png"],
@@ -18,7 +19,7 @@ const projects = [
     code: "https://github.com/TayrineSoares/earth-table"
   },
   {
-    title: "Byte to Bite - Web Recipe App",
+    title: "Byte to Bite - Recipe Finder Web App",
     summary:
       "A fun recipe finder where users can discover, save, and explore meals based on the ingredients they already have at home.",
     details: [
@@ -52,75 +53,85 @@ console.log(projects);
 const Projects = () => {
   
   return (
-    <section id="projects" className="projects">
-      <h2 className="projects__title">Projects</h2>
+    <section id="projects">
+      <div className="section-intro-container">
+        <p className="section-intro">Take a look at my recent </p>
+        <p className="section-title">Projects</p>
 
-      <ul className="projects__list">
-        {projects.map((p) => (
-          <li key={p.title} className="project">
-            <h3 className="project__name">{p.title}</h3>
-            <p className="project__summary">{p.summary}</p>
-            <ul className="project__details">
-              {p.details.map((pdetail, i) => (
-                <li key={i}>{pdetail}</li>
-              ))}
-                        
-            </ul>
-            <div className="project__tech">
-              {p.tech.map((tech, i) => 
-              <span key={i} className="project__tech-badge">
-                {tech}
-              </span>)}
-            </div>
+      </div>
+      
+      <div className="container projects-container">
+        
+        
+        <ul className="projects-list">
+          {projects.map((p) => (
+            <li key={p.title} className="project">
+              <h3 className="project-name">{p.title}</h3>
+              <p className="project-summary">{p.summary}</p>
+              <ul className="project-details">
+                {p.details.map((pdetail, i) => (
+                  <li key={i}>{pdetail}</li>
+                ))}
+                          
+              </ul>
+              <div className="project-tech">
+                {p.tech.map((tech, i) => 
+                <span key={i} className="project-tech-badge">
+                  {tech}
+                </span>)}
+              </div>
 
-            <div className="project__links">
-              {p.live && (
-                <a 
-                href={p.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__link"
-                aria-label={`Open ${p.title} live site`}
-                >
-                  Live
-                </a>
+              <div className="project-links">
+                {p.live && (
+                  <a 
+                  href={p.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-btn"
+                  aria-label={`Open ${p.title} live site`}
+                  >
+                    <ExternalLink size={16} />
+                    <span>Live</span>
+                  </a>
+                )}
+
+                {p.code && (
+                  <a
+                  href={p.code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-btn"
+                  aria-label={`Open ${p.title} source code`}
+
+                  >
+                    <Github size={16} />
+                    <span>Code</span>
+                  </a>
+                )}
+              </div>
+              {p.images?.length > 0 && (
+              <div className="project-media">
+                {p.images.map((imgSrc, i) => (
+                  <img
+                    key={i}
+                    src={imgSrc}
+                    alt={`${p.title} screenshot ${i + 1}`}
+                    loading="lazy"
+                    decoding="async"
+                    className="project-img"
+                  />
+                ))}
+      
+              </div>
               )}
-
-              {p.code && (
-                <a
-                href={p.code}
-                target="__blank"
-                rel="noopener noreferrer"
-                className="project__link"
-                aria-label={`Open ${p.title} source code`}
-
-                >
-                  Code
-                </a>
-              )}
-            </div>
-            {p.images?.length > 0 && (
-            <div className="project__media">
-              {p.images.map((imgSrc, i) => (
-                <img
-                  key={i}
-                  src={imgSrc}
-                  alt={`${p.title} screenshot ${i + 1}`}
-                  loading="lazy"
-                  decoding="async"
-                  className="project__img"
-                />
-              ))}
-     
-            </div>
-            )}
+              
+            </li>
             
-          </li>
-          
-          
+            
 
-        ))}
-      </ul>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };
