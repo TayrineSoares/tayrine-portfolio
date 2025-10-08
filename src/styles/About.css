@@ -48,11 +48,6 @@
   gap: 1rem;
 }
 
-/* Optional: emphasize key words with accent */
-.about-content strong {
-  color: var(--accent);
-  font-weight: 600;
-}
 
 /* =========================
    RESPONSIVE

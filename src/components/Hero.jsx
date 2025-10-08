@@ -21,6 +21,11 @@ const Hero = () => {
             Before moving into tech, I worked in <strong>Civil Engineering</strong> and <strong>Hospitality</strong> — solving problems, juggling projects, staying organized, and keeping cool under pressure. <br/> Everything helped me build a <strong>structured way of thinking</strong> that I now bring into development.
           </p>
 
+          <p className="hero-description">
+            I am seeking opportunities as a <strong>Junior Software Developer</strong> where I can keep learning, growing, and putting my skills to work.
+
+          </p>
+
           {/* Flip Card */}
           <div 
             className={`skill-card ${flipped ? "flipped" : ""}`} 
