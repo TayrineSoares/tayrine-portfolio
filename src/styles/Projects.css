@@ -6,9 +6,32 @@
 }
 
 .project__tech-badge {
-  background: #f0f0f0;
+  background-color: white;
+  color: var(--accent);
+  font-size: 0.75rem;
+  border: 1px solid var(--accent);
   border-radius: 999px;
-  padding: 0.25rem 0.75rem;
-  font-size: 0.85rem;
+  padding: 0.25rem 0.6rem;
 
+
+}
+
+.project__media {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.project__img {
+  width: 100%;
+  display: block;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--accent);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  object-fit: cover;
+}
+
+.project__img--secondary {
+  opacity: 0.95;
 }

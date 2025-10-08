@@ -39,7 +39,7 @@ const projects = [
       "Bookmark recipes with real-time updates from Convex", 
       "Clean, responsive UI with recipe detail modals", ],
     tech: ["React Native", "Convex + Clerk", "Git", "CSS" ],
-    images: ["/images/byte-to-bite-mobile-commenting.gif", "byte-to-bite-mobile-favorites.gif", "byte-to-bite-mobile-search.gif"
+    images: ["/images/byte-to-bite-mobile-commenting.gif", "/images/byte-to-bite-mobile-favorites.gif", "/images/byte-to-bite-mobile-search.gif"
 
     ],
     code: "https://github.com/TayrineSoares/byte-to-bite-mobile",
@@ -99,8 +99,26 @@ const Projects = () => {
                 </a>
               )}
             </div>
+            {p.images?.length > 0 && (
+            <div className="project__media">
+              {p.images.map((imgSrc, i) => (
+                <img
+                  key={i}
+                  src={imgSrc}
+                  alt={`${p.title} screenshot ${i + 1}`}
+                  loading="lazy"
+                  decoding="async"
+                  className="project__img"
+                />
+              ))}
+     
+            </div>
+            )}
             
           </li>
+          
+          
+
         ))}
       </ul>
     </section>
