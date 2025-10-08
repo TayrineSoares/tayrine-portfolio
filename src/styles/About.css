@@ -1,0 +1,86 @@
+/* =========================
+   ABOUT SECTION
+========================= */
+#about {
+  padding: 4rem 3rem;
+  /* Center a 1100px column so intro + content align on same left edge */
+  display: grid;
+  grid-template-columns: 1fr min(1100px, 100%) 1fr;
+}
+
+/* Place both children in the centered column */
+#about > .section-about-intro-container,
+#about > .about-content {
+  grid-column: 2;
+}
+
+/* =========================
+   INTRO (matches Projects/Hero rhythm)
+========================= */
+.section-about-intro-container {
+  margin: 0 0 1.5rem 0;   /* spacing under the intro */
+  text-align: left;
+}
+
+.section-about-intro {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0.25rem 0 0;
+  color: var(--accent);
+}
+
+/* =========================
+   CONTENT (narrower column, aligned to intro’s left edge)
+========================= */
+.about-content {
+  width: min(900px, 100%); /* readable column */
+  justify-self: start;     /* align to same left edge as intro */
+  text-align: left;
+  line-height: 1.7;
+  color: #333;
+  font-size: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+/* Optional: emphasize key words with accent */
+.about-content strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  #about {
+    padding: 3rem 1.25rem;
+    /* keep same centered column; min() handles width on small screens */
+  }
+
+  .section-about-intro {
+    font-size: 1.25rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    gap: 0.85rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-content {
+    font-size: 0.9rem;
+  }
+}

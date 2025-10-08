@@ -2,6 +2,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
+import About from './components/About';
 import './styles/global.css';
 
 const App = () => {
@@ -16,10 +17,11 @@ const App = () => {
         <Hero />
 
         <Projects />
+        <About />
 
-        <section id="about">
-          <h2>About</h2>
-        </section>
+       
+ 
+ 
 
         <section id="contact">
           <h2>Contact</h2>
