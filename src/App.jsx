@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import About from './components/About';
+import Contact from './components/Contact';
 import './styles/global.css';
 
 const App = () => {
@@ -15,17 +16,10 @@ const App = () => {
 
       <main>
         <Hero />
-
         <Projects />
-        <About />
+        <About />   
+        <Contact />  
 
-       
- 
- 
-
-        <section id="contact">
-          <h2>Contact</h2>
-        </section>
       </main>
 
       <footer>

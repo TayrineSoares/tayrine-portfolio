@@ -15,7 +15,7 @@ const projects = [
       "Auth, DB, and storage with Supabase; Deployed on Vercel; Version control with Git.",
     ],
     tech: ["React", "Node.js", "Supabase", "Stripe", "PostgreSQL", "Vercel", "CSS","Git"],
-    images: ["/images/earth.gif","/images/earth-tablet.png", "/images/earth-phone.png"],
+    images: ["/images/earth.gif","/images/earth-tablet.png"],
     live: "https://www.earthtableco.ca/",
     code: "https://github.com/TayrineSoares/earth-table"
   },

@@ -1,8 +1,5 @@
-/* =========================
-   ABOUT SECTION
-========================= */
 #about {
-  padding: 4rem 3rem;
+  padding: 2rem 4rem;
   /* Center a 1100px column so intro + content align on same left edge */
   display: grid;
   grid-template-columns: 1fr min(1100px, 100%) 1fr;
@@ -54,7 +51,7 @@
 ========================= */
 @media (max-width: 768px) {
   #about {
-    padding: 3rem 1.25rem;
+    padding: 2.5rem 2rem;
     /* keep same centered column; min() handles width on small screens */
   }
 

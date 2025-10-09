@@ -7,21 +7,6 @@
   padding: 1rem;
 }
 
-.logo {
-  font-weight: 600;
-  font-size: 1.25rem;
-  letter-spacing: -0.5px;   /* subtle tightening for a designer look */
-  text-decoration: none;
-  color: var(--fg);
-  transition: color 0.2s ease;
-}
-
-.logo:hover {
-  color: var(--accent);
-  text-decoration: none;  
-}
-
-
 /* Navigation (desktop) */
 .nav-list {
   list-style: none;
@@ -48,6 +33,7 @@
   padding: 0.5rem;
   border-radius: 8px;
   cursor: pointer;
+  
 }
 
 .menu-toggle .bar {
@@ -56,6 +42,7 @@
   height: 2px;
   background: var(--fg);
   margin: 4px 0;
+  
 }
 
 /* Breakpoint: under 768px */
