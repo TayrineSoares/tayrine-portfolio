@@ -206,7 +206,7 @@ section {
 
 /* Mobile polish */
 @media (max-width: 768px) {
-  /* Softer section padding like hero */
+
   #projects { padding: 2.5rem 2rem; }
 
   /* Card spacing/hover */
