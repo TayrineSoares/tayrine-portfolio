@@ -80,7 +80,8 @@
     position: absolute;
     right: 1rem;
     top: calc(100% + 8px);                 /* below header */
-    background-color: #fff;
+    background-color: var(--bg);
+    
   
 
 
@@ -92,9 +93,9 @@
     min-width: 150px;
     z-index: 20;
 
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--line);
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
      /* start hidden */
     pointer-events: none;

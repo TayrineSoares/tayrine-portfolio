@@ -16,6 +16,7 @@
   --muted: #6c6c6c;   /* softer gray for secondary text */
   --line: #e6e6e6;    /* light gray borders/dividers */
   --accent: #CC8F2E; 
+  color-scheme: light dark;
 }
 
 @media (prefers-color-scheme: dark) {

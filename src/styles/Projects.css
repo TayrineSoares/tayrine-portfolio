@@ -10,8 +10,8 @@ section {
 
 /* Limit the overall project card width */
 .project {
-  background: #fff;
-  border: none;            
+  background: var(--bg);
+  border: 1px solid var(--line);       
   border-radius: 12px;
   padding: 1.25rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
