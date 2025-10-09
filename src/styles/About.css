@@ -42,11 +42,7 @@ section {
   width: min(900px, 100%); /* readable column */
   justify-self: start;     /* align to same left edge as intro */
   text-align: left;
-  line-height: 1.7;
-  color: #333;
-  font-size: 1rem;
   display: grid;
-  gap: 1rem;
 }
 
 
