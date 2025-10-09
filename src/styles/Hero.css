@@ -1,8 +1,10 @@
-/* =========================
-   HERO SECTION
-========================= */
+
 #hero {
   padding: 2rem 4rem;
+}
+
+section {
+  scroll-margin-top: 80px; /* adjust to your header height */
 }
 
 .hero-container {

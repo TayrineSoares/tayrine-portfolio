@@ -28,13 +28,25 @@
 /* ---- MOBILE STYLES ---- */
 .menu-toggle {
   display: none;               /* hidden on desktop */
-  background: none;
+  background: #fff; 
   border: 1px solid var(--line);
   padding: 0.5rem;
   border-radius: 8px;
   cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+  transition: box-shadow .18s ease, transform .18s ease, background .18s ease, border-color .18s ease;
   
 }
+
+.menu-toggle:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,.10);
+}
+
+.menu-toggle:active {
+  transform: translateY(1px);
+}
+
+
 
 .menu-toggle .bar {
   display: block;
@@ -42,8 +54,15 @@
   height: 2px;
   background: var(--fg);
   margin: 4px 0;
+   border-radius: 2px;
+  transition: background .18s ease, opacity .18s ease;
   
 }
+/* when menu is open, tint bars to accent */
+.menu-toggle.open .bar {
+  background: var(--accent);
+}
+
 
 /* Breakpoint: under 768px */
 @media (max-width: 768px) {
@@ -61,6 +80,8 @@
     position: absolute;
     right: 1rem;
     top: calc(100% + 8px);                 /* below header */
+    background-color: #fff;
+  
 
 
     padding: 0.75rem 1rem;
@@ -70,6 +91,10 @@
     gap: 0.75rem;
     min-width: 150px;
     z-index: 20;
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 
      /* start hidden */
     pointer-events: none;
@@ -81,15 +106,22 @@
 
   .nav-list.nav-open { 
     display: flex; 
-    margin: 10px; 
     pointer-events: auto;
     opacity: 1;
     transform: translateY(0);
   
   }
 
+  .nav-list a {
+    display: block;
+    padding: 0.5rem 0.6rem;
+    border-radius: 8px;
+    font-weight: 600;
+    color: var(--fg);
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+    text-align: right;
+  }
 
 
-  /* On mobile, space is tight—make links slightly smaller */
-  .nav-list a { font-weight: 600; }
 }

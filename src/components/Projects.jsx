@@ -28,7 +28,7 @@ const projects = [
       "Bookmark favorite recipes with real-time updates.",
       "Intuitive, responsive interface with recipe details, nutrition facts, custom timers, and allergy flags.",
     ],
-    tech: ["React", "Node.js", "PostgreSQL", "CSS"],
+    tech: ["React", "Node.js", "PostgreSQL", "CSS", "Git"],
     images: ["/images/byte-to-bite-desktop.gif","/images/byte-to-bite-tablet-landscape.png"],
     code: "https://github.com/TayrineSoares/byte-to-bite"
   },
