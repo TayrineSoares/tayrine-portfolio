@@ -1,13 +1,17 @@
-/* Header container */
+/* ===========================
+   Header Container
+=========================== */
 .header-container {
-  position: relative; /* <-- important for the absolute nav */
+  position: relative; /* For absolute-positioned nav */
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 1rem;
 }
 
-/* Navigation (desktop) */
+/* ===========================
+   Desktop Navigation
+=========================== */
 .nav-list {
   list-style: none;
   display: flex;
@@ -25,17 +29,18 @@
   color: var(--accent);
 }
 
-/* ---- MOBILE STYLES ---- */
+/* ===========================
+   Mobile Toggle Button
+=========================== */
 .menu-toggle {
-  display: none;               /* hidden on desktop */
-  background: #fff; 
+  display: none; /* hidden on desktop */
+  background: var(--bg);
   border: 1px solid var(--line);
   padding: 0.5rem;
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0,0,0,.06);
   transition: box-shadow .18s ease, transform .18s ease, background .18s ease, border-color .18s ease;
-  
 }
 
 .menu-toggle:hover {
@@ -46,47 +51,48 @@
   transform: translateY(1px);
 }
 
-
-
 .menu-toggle .bar {
   display: block;
   width: 24px;
   height: 2px;
   background: var(--fg);
   margin: 4px 0;
-   border-radius: 2px;
+  border-radius: 2px;
   transition: background .18s ease, opacity .18s ease;
-  
 }
-/* when menu is open, tint bars to accent */
+
 .menu-toggle.open .bar {
   background: var(--accent);
 }
 
+/* Focus ring (accessible) */
+.menu-toggle:focus-visible {
+  outline: 2px solid transparent;
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--accent) 35%, transparent),
+    0 2px 6px rgba(0,0,0,.08);
+  border-color: var(--accent);
+}
 
-/* Breakpoint: under 768px */
+/* ===========================
+   Mobile Navigation Styles
+=========================== */
 @media (max-width: 768px) {
-  
-  .menu-toggle { 
-    display: flex; 
+  .menu-toggle {
+    display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     margin-left: auto;
-   }
+  }
 
-  /* stack nav vertically, hidden by default */
   .nav-list {
     position: absolute;
     right: 1rem;
-    top: calc(100% + 8px);                 /* below header */
+    top: calc(100% + 8px);
     background-color: var(--bg);
-    
-  
-
-
     padding: 0.75rem 1rem;
-    display: flex;          
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 0.75rem;
@@ -97,20 +103,16 @@
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
-     /* start hidden */
     pointer-events: none;
     opacity: 0;
     transform: translateY(-6px);
     transition: opacity .2s ease, transform .2s ease;
- 
   }
 
-  .nav-list.nav-open { 
-    display: flex; 
+  .nav-list.nav-open {
     pointer-events: auto;
     opacity: 1;
     transform: translateY(0);
-  
   }
 
   .nav-list a {
@@ -120,9 +122,24 @@
     font-weight: 600;
     color: var(--fg);
     text-decoration: none;
-    transition: background 0.2s ease, color 0.2s ease;
     text-align: right;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+}
+
+/* ===========================
+   Dark Mode Tweaks
+=========================== */
+@media (prefers-color-scheme: dark) {
+  .menu-toggle {
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,.06),
+      0 8px 20px rgba(0,0,0,.55);
   }
 
-
+  .nav-list {
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,.04),
+      0 14px 32px rgba(0,0,0,.6);
+  }
 }
