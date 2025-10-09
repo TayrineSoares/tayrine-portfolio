@@ -139,18 +139,27 @@ section {
    RESPONSIVE
 ========================= */
 @media (max-width: 768px) {
+
+  #hero {
+    padding: 2.5rem 2rem;
+    /* keep same centered column; min() handles width on small screens */
+  }
+  
   .hero-container {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    align-items: flex-start;
   }
 
   .hero-text {
     order: 2;
+    width: 100%;
   }
 
   .hero-image {
     order: 1;
     margin-bottom: 2rem;
+    align-self: center;
   }
 
   .hero-image img {

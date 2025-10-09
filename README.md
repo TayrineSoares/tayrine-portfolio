@@ -1,4 +1,4 @@
-# 🌐 Tayrine Soares — Portfolio
+# Tayrine Soares — Portfolio
 
 A responsive personal portfolio built with **React** and **Vite**, showcasing my projects, skills, and ways to get in touch.
 
