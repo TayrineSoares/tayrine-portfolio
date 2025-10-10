@@ -55,9 +55,7 @@ section {
     /* keep same centered column; min() handles width on small screens */
   }
 
-  .section-about-intro {
-    font-size: 1.25rem;
-  }
+
 
   .section-title {
     font-size: 2rem;
