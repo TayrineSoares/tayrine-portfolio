@@ -17,17 +17,17 @@ const About = () => {
           <br/><br/>
           I've always loved <strong>solving problems</strong> and had a natural <strong>curiosity for technology</strong>.
           <br/>
-          But it wasn't until recently that I truly had the chance to dive in and develop my skills as a Web Developer.
+          But it wasn't until recently that I truly had the chance to dive in and develop my skills.
         </p>
 
         <p>
-          During and after completing Lighthouse Labs' Web Development Program, I started building projects that <strong>bring ideas to life</strong> and explore my creativity.
+          During and after completing <strong>Lighthouse Labs' Web Development Program</strong>, I started building projects that <strong>bring ideas to life</strong> and explore my creativity.
         </p>
 
         <p>
           <strong>Outside of coding</strong>, I'm a huge foodie!
           <br/>
-          I love cooking (and let's be honest, eating), exploring new places, and collecting a few tattoos along the way. 
+          I love cooking, exploring new places, and collecting a few tattoos along the way. 
           <br/>
           Fun fact about me: I'm learning how to swim at the age of 33 🧜🏻‍♀️!
         </p>

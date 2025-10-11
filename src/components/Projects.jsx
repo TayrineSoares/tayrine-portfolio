@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Earth Table Co - E-commerce Platform",
     summary:
-      "A full-stack e-commerce platform for a holistic meal prep business with secure payments and an admin workflow.",
+      "A full-stack solution for a holistic meal prep business, with integrated payments and a streamlined admin workflow.",
     details: [
       "Responsive and intuitive design, featuring product catalogue with filterable menu items in clear categories",
       "Admin dashboard to create/edit products, manage availability, pricing, and inventory; view and fulfill orders",
@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Byte to Bite - Recipe Finder Web App",
     summary:
-      "A fun recipe finder where users can discover, save, and explore meals based on the ingredients they already have at home.",
+      "A fun recipe finder where users can discover and save meals based on the ingredients they already have at home.",
     details: [
       "Search for recipes by entering available ingredients, powered by the Spoonacular API.",
       "Bookmark favorite recipes with real-time updates.",
@@ -33,8 +33,8 @@ const projects = [
     code: "https://github.com/TayrineSoares/byte-to-bite"
   },
   {
-    title:"Mobile Byte to Bite - A React Native Expo Project",
-    summary:"The mobile version of our fun recipe finder where users can post, save, and share their favorite recipes.", 
+    title:"Mobile Byte to Bite - A React Native Project",
+    summary:"The mobile version of our fun recipe finder where users can browse, save, and post their favorite recipes.", 
     details:[
       "Browse recipes by entering available ingredients, powered by the Spoonacular API.", 
       "User login and profile system via Clerk", 
@@ -48,7 +48,7 @@ const projects = [
 
   },
 ];
-console.log(projects);
+
 
 
 const Projects = () => {
