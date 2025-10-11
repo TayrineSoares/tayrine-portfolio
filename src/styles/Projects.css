@@ -209,6 +209,10 @@ section {
 
   #projects { padding: 2.5rem 2rem; }
 
+  .projects-container {
+    padding: 0;
+  }
+
   /* Card spacing/hover */
   .project {
     padding: 1rem;
