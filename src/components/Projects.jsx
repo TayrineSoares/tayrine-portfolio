@@ -9,7 +9,7 @@ const projects = [
     summary:
       "A full-stack solution for a holistic meal prep business, with integrated payments and a streamlined admin workflow.",
     details: [
-      "Responsive and intuitive design, featuring product catalogue with filterable menu items in clear categories",
+      "Responsive and intuitive design, featuring product catalogue with filterable menu items in clear categories", "Increased business sales by 30% within the first month of launch",
       "Admin dashboard to create/edit products, manage availability, pricing, and inventory; view and fulfill orders",
       "Smooth cart & checkout flow with Stripe integration",
       "Auth, DB, and storage with Supabase; Deployed on Vercel; Version control with Git.",
