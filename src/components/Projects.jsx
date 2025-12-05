@@ -7,18 +7,33 @@ const projects = [
   {
     title: "Earth Table Co - E-commerce Platform",
     summary:
-      "A full-stack solution for a holistic meal prep business, with integrated payments and a streamlined admin workflow.",
+      "A full-stack solution for a holistic meal prep business, with integrated payments and a streamlined admin workflow.\nThis project increased business sales by 30% within the first month of launch.",
     details: [
-      "Responsive and intuitive design, featuring product catalogue with filterable menu items in clear categories", "Increased business sales by 30% within the first month of launch",
+      "Responsive and intuitive design, featuring product catalogue with filterable menu items in clear categories",
       "Admin dashboard to create/edit products, manage availability, pricing, and inventory; view and fulfill orders",
       "Smooth cart & checkout flow with Stripe integration",
       "Auth, DB, and storage with Supabase; Deployed on Vercel; Version control with Git.",
     ],
-    tech: ["React", "Node.js", "Supabase", "Stripe", "PostgreSQL", "Vercel", "CSS","Git"],
+    tech: ["React", "Node.js", "Supabase", "Stripe", "PostgreSQL", "Vercel", "CSS","Git", "Trello"],
     images: ["/images/earth.gif"],
     live: "https://www.earthtableco.ca/",
     code: "https://github.com/TayrineSoares/earth-table"
   },
+
+  {
+    title: "KiloBoy Artwork - (Under Development)",
+    summary:
+      "A full-stack gallery and e-commerce built for a Toronto-based artist. \nFeaturing dynamic catalogue with integrated payments and shipping, events calendar, and streamlined admin tools.",
+    details: [
+      "Custom visual identity inspired by KiloBoy's high-energy style",
+      "Dynamic gallery with filterable artwork, product details, and an optimized shopping experience",
+      "Admin dashboard to manage artworks, pricing, availability, collections, shipping, and custom orders",
+      "Smooth cart & checkout flow with Stripe integration",
+    ],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Vercel", "Git", "Trello"],
+    images: ["/images/kiloboy-about.jpg", "/images/kiloboy-homepage.jpg"],
+    code: "https://github.com/TayrineSoares/kiloboy-artwork"},
+
   {
     title: "Byte to Bite - Recipe Finder Web App",
     summary:

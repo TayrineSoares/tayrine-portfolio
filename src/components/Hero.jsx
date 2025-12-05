@@ -22,7 +22,8 @@ const Hero = () => {
           </p>
 
           <p className="hero-description">
-            I am seeking opportunities as a <strong>Junior Software Developer</strong> where I can keep learning, growing, and putting my skills to work.
+            I'm currently seeking <strong>entry-level opportunities</strong> in <strong>Software Development </strong> or related technical roles. 
+            <br /> <br />My main goal is to keep <em>learning, growing,</em> and contributing to <em>meaningful work.</em>
 
           </p>
 
