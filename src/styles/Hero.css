@@ -48,6 +48,19 @@ section {
   margin-bottom: 1.5rem;
 }
 
+.hero-description a {
+  color: inherit; 
+
+
+  
+
+}
+
+.hero-description a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
 /* =========================
    FLIP CARD (SKILLS)
 ========================= */

@@ -15,17 +15,26 @@ const Hero = () => {
           <h1 className="hero-name">Tayrine!</h1>
           <h2 className="hero-title">Full-Stack Developer</h2>
           <p className="hero-description">
-            I love building clean, responsive web applications that bring ideas to life.
+            I build clean, responsive web applications that bring ideas to life.
           </p>
+          
+
           <p className="hero-description" >
-            Before moving into tech, I worked in <strong>Civil Engineering</strong> and <strong>Hospitality</strong> — solving problems, juggling projects, staying organized, and keeping cool under pressure. <br/> Everything helped me build a <strong>structured way of thinking</strong> that I now bring into development.
+            Before moving into tech, I worked in <strong>Civil Engineering</strong> and <strong>Hospitality</strong>, which shaped the structured, calm, and problem-solving mindset I bring into development today.
           </p>
 
           <p className="hero-description">
-            I'm currently seeking <strong>entry-level opportunities</strong> in <strong>Software Development </strong> or related technical roles. 
-            <br /> <br />My main goal is to keep <em>learning, growing,</em> and contributing to <em>meaningful work.</em>
-
+            I'm currently a <strong>Full-Stack Developer Intern</strong> at {""}
+            <a
+              href="https://mykitchenops.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              MyKitchenOps
+            </a>, working alongside senior engineers on a production application — refactoring code, fixing bugs, and improving features and UX with <strong>React, Node.js, Supabase, and Tailwind.</strong>
           </p>
+          <br/>
+
 
           {/* Flip Card */}
           <div 
@@ -60,7 +69,7 @@ const Hero = () => {
 
         {/* Right: Image */}
         <div className="hero-image">
-          <img src="/Tayrine_Soares.jpeg" alt="Tayrine Soares" />
+          <img src="/Tayrine_Soares_2.jpeg" alt="Tayrine Soares" />
         </div>
       </div>
     </section>
