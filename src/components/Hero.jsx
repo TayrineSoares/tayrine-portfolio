@@ -15,16 +15,16 @@ const Hero = () => {
           <h1 className="hero-name">Tayrine!</h1>
           <h2 className="hero-title">Full-Stack Developer</h2>
           <p className="hero-description">
-            I build clean, responsive web applications that bring ideas to life.
+            I build clean, responsive web applications that <span className="highlight">bring ideas to life.</span>
           </p>
           
 
           <p className="hero-description" >
-            Before moving into tech, I worked in <strong>Civil Engineering</strong> and <strong>Hospitality</strong>, which shaped the structured, calm, and problem-solving mindset I bring into development today.
+            Before moving into tech, I worked in <strong>Civil Engineering</strong> and <strong>Hospitality</strong>, which shaped the <span className="highlight"> structured, calm, and problem-solving mindset </span> I bring into development today.
           </p>
 
           <p className="hero-description">
-            I'm currently a <strong>Full-Stack Developer Intern</strong> at {""}
+            I'm currently a <span className="highlight">Full-Stack Developer Intern</span> at {" "}
             <a
               href="https://mykitchenops.com"
               target="_blank"

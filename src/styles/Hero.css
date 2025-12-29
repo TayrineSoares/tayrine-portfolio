@@ -49,16 +49,29 @@ section {
 }
 
 .hero-description a {
-  color: inherit; 
-
-
-  
+  color: inherit;  
 
 }
 
 .hero-description a:hover {
   opacity: 0.8;
   text-decoration: underline;
+}
+
+
+.highlight {
+  font-weight:600;
+
+  /* highlighter that wraps across lines */
+  background: linear-gradient(
+    transparent 40%,
+    rgba(255, 230, 110, 0.42) 60%
+  );
+
+  padding: 0 0.15em;
+
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 /* =========================
