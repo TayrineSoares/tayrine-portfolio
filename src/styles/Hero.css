@@ -74,6 +74,15 @@ section {
   -webkit-box-decoration-break: clone;
 }
 
+@media (prefers-color-scheme: dark) {
+  .highlight {
+    background: rgba(204, 143, 46, 0.25);
+    height: 0.45em;
+    bottom: 0.05em;
+    border-radius: 3px;
+  }
+}
+
 /* =========================
    FLIP CARD (SKILLS)
 ========================= */
