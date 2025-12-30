@@ -9,6 +9,7 @@
    - Light by default
    - Auto switch to dark using prefers-color-scheme
 ================================ */
+
 :root {
   /* Light mode */
   --bg: #ffffff;      /* clean white background */
@@ -17,6 +18,8 @@
   --line: #e6e6e6;    /* light gray borders/dividers */
   --accent: #CC8F2E; 
   color-scheme: light dark;
+
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,6 +33,7 @@
   }
 
   body {
+    background-image: url("/bg2-dark.png");
     background-size: 500px;
   }
 }
@@ -52,19 +56,13 @@ Global font & base text styles
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   background-color: var(--bg);
-  color: var(--fg);
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  transition: background-color 0.25s ease, color 0.25s ease;
-
-  position: relative;
-  min-height: 100vh;
-
   background-image: url("/bg2.png");
   background-repeat: repeat;
-  background-size: 300px;
+  background-size: 200px;
 
-  
+  color: var(--fg);
+  line-height: 1.5;
+  min-height: 100vh;
 }
 
 
