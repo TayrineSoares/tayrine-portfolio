@@ -33,8 +33,7 @@
   }
 
   body {
-    background-image: url("/bg2-dark.png");
-    background-size: 500px;
+    background-image: none;
   }
 }
 
