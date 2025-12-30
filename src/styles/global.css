@@ -12,24 +12,32 @@
 
 :root {
   /* Light mode */
-  --bg: #ffffff;      /* clean white background */
-  --fg: #1a1a1a;      /* near-black text for strong contrast */
-  --muted: #6c6c6c;   /* softer gray for secondary text */
-  --line: #e6e6e6;    /* light gray borders/dividers */
-  --accent: #CC8F2E; 
+  --bg: #ffffff;
+  /* clean white background */
+  --fg: #1a1a1a;
+  /* near-black text for strong contrast */
+  --muted: #6c6c6c;
+  /* softer gray for secondary text */
+  --line: #e6e6e6;
+  /* light gray borders/dividers */
+  --accent: #CC8F2E;
   color-scheme: light dark;
 
-  
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     /* Dark mode */
-    --bg: #0f1115;     /* deep grayish blue background */
-    --fg: #eaeaea;     /* light text */
-    --muted: #9a9a9a;  /* muted gray for secondary text */
-    --line: #242834;   /* subtle divider lines */
-    --accent: #CC8F2E; 
+    --bg: #0f1115;
+    /* deep grayish blue background */
+    --fg: #eaeaea;
+    /* light text */
+    --muted: #9a9a9a;
+    /* muted gray for secondary text */
+    --line: #242834;
+    /* subtle divider lines */
+    --accent: #CC8F2E;
   }
 
   body {
@@ -66,7 +74,8 @@ body {
 
 
 /* Headings */
-h1, h2 {
+h1,
+h2 {
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -88,7 +97,8 @@ LAYOUT HELPERS
 Container and section spacing
 ================================ */
 .container {
-  max-width: 95vw;   /* keeps content centered and narrow */
+  max-width: 95vw;
+  /* keeps content centered and narrow */
   margin: 0 auto;
   padding: 1rem;
 }
@@ -130,4 +140,3 @@ footer {
 .accent {
   color: var(--accent);
 }
-
