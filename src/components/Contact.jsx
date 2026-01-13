@@ -16,9 +16,9 @@ const Contact = () => {
           <p>
             <Mail size={14} /> tayrinecristina@hotmail.com
           </p>
-          <p>
+          {/* <p>
             <Phone size={14} /> +1 (647) 787-2585
-          </p>
+          </p> */}
           <p>
             <Linkedin size={14} />
             <a
