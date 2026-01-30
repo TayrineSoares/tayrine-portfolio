@@ -31,7 +31,7 @@ const projects = [
       "Smooth cart & checkout flow with Stripe integration",
     ],
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Vercel", "Git", "Trello"],
-    images: ["/images/kiloboy-about.jpg", "/images/kiloboy-homepage.jpg"],
+    images: ["/images/kiloboy-homepageGIF.gif","/images/kiloboy-about.jpg"],
     code: "https://github.com/TayrineSoares/kiloboy-artwork"},
 
   {
