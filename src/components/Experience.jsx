@@ -8,8 +8,7 @@ const experience = [
     companyUrl: "https://mykitchenops.com",
     highlights: [
       "Ship features and fixes on a production app with React, Node.js, Supabase, Tailwind",
-      "Refactor code for maintainability; fix bugs and improve UX with senior engineers",
-      "Own tasks from ticket to deployment",
+      "Refactor code for maintainability; fix bugs and improve UX with senior engineers"
     ],
   },
   {
@@ -38,8 +37,8 @@ const Experience = () => {
   return (
     <section id="experience">
       <div className="section-intro-container">
-        <p className="section-intro">My previous</p>
-        <h2 className="section-title">Experience</h2>
+        <p className="section-intro">Where I've Built</p>
+        <h2 className="section-title">In Production</h2>
       </div>
 
       <div className="container experience-container">

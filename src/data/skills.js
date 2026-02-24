@@ -1,4 +1,4 @@
-/** Shared list of skills — used by Hero (flip card) and Skills section */
+/** Shared list of skills — used by Skills section */
 export const skills = [
   "JavaScript",
   "React",
