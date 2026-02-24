@@ -21,11 +21,11 @@ const Hero = () => {
           </p>
 
           <p className="hero-description">
-            Former civil engineer and hospitality professional. I bring a <span className="highlight">structured, calm, and product-minded approach</span> to development: shipping features, solving real problems, and improving systems people actually use.
+            Former civil engineer and hospitality professional, I bring a <span className="highlight">structured, calm, and product-minded approach</span> to development: shipping features, solving real problems, and improving systems people actually enjoy using.
           </p>
 
           <p className="hero-description">
-            Currently a <span className="highlight">Full-Stack Developer Intern</span> at{" "}
+            I am currently a <span className="highlight">Full-Stack Developer Intern</span> at{" "}
             <a href="https://mykitchenops.com" target="_blank" rel="noopener noreferrer">
               MyKitchenOps
             </a>
