@@ -7,8 +7,14 @@ const Header = () => {
   const menuRef = useRef(null);
   const buttonRef = useRef(null);
 
-  // functional form, where v is always the most recent value of the state
-  const toggle = () => setOpen(v => !v);
+  const toggle = () => {
+    if (open) {
+      buttonRef.current?.blur();
+      setOpen(false);
+    } else {
+      setOpen(true);
+    }
+  };
   const closeMenu = () => setOpen(false);
 
   useEffect(() => {
@@ -27,13 +33,6 @@ const Header = () => {
 
     document.addEventListener('click', handleClickOutside);
     return () => document.removeEventListener('click', handleClickOutside);
-  }, [open]);
-
-  // Blur the hamburger when menu closes so it doesn't keep the purple focus look
-  useEffect(() => {
-    if (!open && buttonRef.current && document.activeElement === buttonRef.current) {
-      buttonRef.current.blur();
-    }
   }, [open]);
 
   return (

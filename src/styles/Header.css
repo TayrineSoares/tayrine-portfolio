@@ -81,7 +81,13 @@
   transition: border-color var(--transition), background var(--transition), transform var(--transition);
 }
 
-.menu-toggle:hover {
+/* Accent hover only when menu is open; when closed keep grey */
+.menu-toggle:hover:not(.open) {
+  border-color: var(--line);
+  background: var(--surface-elevated);
+}
+
+.menu-toggle.open:hover {
   border-color: var(--accent);
   background: var(--accent-subtle);
 }
@@ -98,7 +104,7 @@
 }
 
 .menu-toggle svg {
-  color: var(--fg);
+  color: var(--muted);
   transition: color var(--transition);
 }
 
@@ -108,9 +114,18 @@
 
 .menu-toggle:focus-visible {
   outline: 2px solid transparent;
-  box-shadow: 0 0 0 2px var(--accent);
   outline-offset: 2px;
+}
+
+/* Only show accent focus ring when menu is open; when closed keep it neutral */
+.menu-toggle.open:focus-visible {
+  box-shadow: 0 0 0 2px var(--accent);
   border-color: var(--accent);
+}
+
+.menu-toggle:focus-visible:not(.open) {
+  box-shadow: 0 0 0 2px var(--muted);
+  border-color: var(--line);
 }
 
 /* ===========================
