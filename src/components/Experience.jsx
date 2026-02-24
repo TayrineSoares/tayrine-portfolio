@@ -1,4 +1,5 @@
 import "../styles/Experience.css";
+import { FileText } from "lucide-react";
 
 const experience = [
   {
@@ -68,6 +69,18 @@ const Experience = () => {
               </div>
             </article>
           ))}
+        </div>
+
+        <div className="experience-resume-wrap">
+          <FileText size={18} aria-hidden />
+          <a
+            href="/Tayrine_Soares_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="experience-resume-link"
+          >
+            View my Resume
+          </a>
         </div>
       </div>
     </section>

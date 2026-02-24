@@ -38,12 +38,7 @@ const Contact = () => {
             <Mail size={18} aria-hidden />
             <a href="mailto:tayrinecristina@hotmail.com">tayrinecristina@hotmail.com</a>
           </p>
-          <p>
-            <FileText size={18} aria-hidden />
-            <a href="/Tayrine_Soares_Resume.pdf" target="_blank" rel="noopener noreferrer">
-              View my Resume
-            </a>
-          </p>
+        
         </div>
       </div>
     </section>
