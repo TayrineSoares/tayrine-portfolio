@@ -159,11 +159,11 @@ section {
 .hero-image::before {
   content: "";
   position: absolute;
-  inset: -8px;
-  border-radius: 28px;
-  background: linear-gradient(135deg, var(--accent), transparent 50%, var(--accent));
-  opacity: 0.4;
-  filter: blur(20px);
+  inset: -6px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.25;
+  filter: blur(16px);
   z-index: -1;
   pointer-events: none;
 }
@@ -172,15 +172,13 @@ section {
   max-width: min(340px, 38vw);
   width: 100%;
   aspect-ratio: 1;
-  border-radius: 24px;
+  border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--accent);
+  border: 1px solid var(--accent);
   box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.1),
-    0 0 0 3px var(--accent-subtle),
-    0 0 30px var(--accent-glow),
-    0 0 60px color-mix(in srgb, var(--accent) 40%, transparent),
-    0 24px 48px rgba(0, 0, 0, 0.35);
+    0 0 0 2px var(--accent-subtle),
+    0 0 24px var(--accent-glow),
+    0 16px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* =========================
