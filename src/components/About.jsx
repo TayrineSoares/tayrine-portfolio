@@ -4,32 +4,19 @@ const About = () => {
   return (
     <section id="about">
       <div className="section-about-intro-container">
-        <p className="section-about-intro">Get to know more about</p>
-        <p className="section-title">Who I Am</p>
+        <p className="section-about-intro">A bit about me</p>
+        <h2 className="section-title">Who I Am</h2>
       </div>
 
       <div className="about-content">
         <p>
-          Hey 👋 I'm Tayrine! <br/>
-          <br/>
-
-          I was born and raised in Brazil, but Canada is the place I now call Home. 
-          <br/><br/>
-          I've always loved <strong>solving problems</strong> and had a natural <strong>curiosity for technology</strong>.
-          <br/>
-          But it wasn't until recently that I truly had the chance to dive in and develop my skills.
+          I'm Tayrine — born in Brazil, based in Toronto. I've always been drawn to <strong>solving problems</strong> and <strong>technology</strong>; the shift from civil engineering into software was a deliberate move toward building products that people actually use.
         </p>
-
         <p>
-          During and after completing <strong>Lighthouse Labs' Web Development Program</strong>, I started building projects that <strong>bring ideas to life</strong> and explore my creativity.
+          After <strong>Lighthouse Labs' Web Development Program</strong>, I've been shipping full-stack projects and learning from production code at <strong>MyKitchenOps</strong>. I care about clean code, scalability, and UX that holds up under real use.
         </p>
-
         <p>
-          <strong>Outside of coding</strong>, I'm a huge foodie!
-          <br/>
-          I love cooking, exploring new places, and collecting a few tattoos along the way. 
-          <br/>
-          Fun fact about me: I'm learning how to swim at the age of 33 🧜🏻‍♀️!
+          Outside of code: food, travel, and a growing tattoo collection. Currently learning to swim.
         </p>
       </div>
     </section>

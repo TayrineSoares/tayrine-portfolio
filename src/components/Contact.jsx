@@ -1,51 +1,46 @@
-import { Mail, Phone, Linkedin, Github, FileText } from "lucide-react";
+import { Mail, Linkedin, Github, FileText } from "lucide-react";
 import "../styles/Contact.css";
 
 const Contact = () => {
   return (
     <section id="contact">
       <div className="section-intro-container">
-        <p className="section-intro">Want to chat?</p>
-        <p className="section-title">Get in Touch</p>
+        <p className="section-intro">Let's connect</p>
+        <h2 className="section-title">Get in Touch</h2>
       </div>
 
       <div className="contact-content">
-     
+        <div className="contact-icons">
+          <a
+            href="https://github.com/TayrineSoares"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-icon-link"
+            aria-label="GitHub"
+          >
+            <Github size={28} strokeWidth={1.75} />
+            <span>GitHub</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/tayrine-soares"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-icon-link"
+            aria-label="LinkedIn"
+          >
+            <Linkedin size={28} strokeWidth={1.75} />
+            <span>LinkedIn</span>
+          </a>
+        </div>
 
         <div className="contact-info">
           <p>
-            <Mail size={14} /> tayrinecristina@hotmail.com
-          </p>
-          {/* <p>
-            <Phone size={14} /> +1 (647) 787-2585
-          </p> */}
-          <p>
-            <Linkedin size={14} />
-            <a
-              href="https://www.linkedin.com/in/tayrine-soares"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              linkedin.com/in/tayrine-soares
-            </a>
+            <Mail size={18} aria-hidden />
+            <a href="mailto:tayrinecristina@hotmail.com">tayrinecristina@hotmail.com</a>
           </p>
           <p>
-            <Github size={14} />
-            <a
-              href="https://github.com/TayrineSoares"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              github.com/TayrineSoares
-            </a>
-          </p>
-          <p>
-            <FileText size={14} />
-            <a
-              href="/Tayrine_Soares_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <FileText size={18} aria-hidden />
+            <a href="/Tayrine_Soares_Resume.pdf" target="_blank" rel="noopener noreferrer">
               View my Resume
             </a>
           </p>

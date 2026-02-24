@@ -1,13 +1,14 @@
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Experience from './components/Experience';
 import About from './components/About';
 import Contact from './components/Contact';
 import './styles/global.css';
 
 const App = () => {
-
   return (
     <>
       <header>
@@ -16,10 +17,11 @@ const App = () => {
 
       <main>
         <Hero />
+        <Skills />
         <Projects />
-        <About />   
-        <Contact />  
-
+        <Experience />
+        {/* <About /> */}
+        <Contact />
       </main>
 
       <footer>

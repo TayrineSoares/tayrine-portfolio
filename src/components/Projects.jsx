@@ -5,62 +5,54 @@ import Carousel from "./Carousel";
 
 const projects = [
   {
-    title: "Earth Table Co - E-commerce Platform",
-    summary:
-      "A full-stack solution for a holistic meal prep business, with integrated payments and a streamlined admin workflow.\nThis project increased business sales by 30% within the first month of launch.",
+    title: "Earth Table Co",
+    summary: "Full-stack e-commerce for a holistic meal prep business. Integrated payments, admin dashboard, and inventory — built to scale with the business.",
+    impact: "30% increase in sales within the first month of launch.",
     details: [
-      "Responsive and intuitive design, featuring product catalogue with filterable menu items in clear categories",
-      "Admin dashboard to create/edit products, manage availability, pricing, and inventory; view and fulfill orders",
-      "Smooth cart & checkout flow with Stripe integration",
-      "Auth, DB, and storage with Supabase; Deployed on Vercel; Version control with Git.",
+      "Product catalogue with filterable menu items and clear categories",
+      "Admin dashboard: products, availability, pricing, inventory, order fulfillment",
+      "Stripe checkout; Supabase auth, DB, and storage; Vercel deployment",
     ],
-    tech: ["React", "Node.js", "Supabase", "Stripe", "PostgreSQL", "Vercel", "CSS","Git", "Trello"],
+    tech: ["React", "Node.js", "Supabase", "Stripe", "PostgreSQL", "Vercel", "Git"],
     images: ["/images/earth.gif"],
     live: "https://www.earthtableco.ca/",
-    code: "https://github.com/TayrineSoares/earth-table"
+    code: "https://github.com/TayrineSoares/earth-table",
   },
-
   {
-    title: "KiloBoy Artwork - (Under Development)",
-    summary:
-      "A full-stack gallery and e-commerce built for a Toronto-based artist. \nFeaturing dynamic catalogue with integrated payments and shipping, events calendar, and streamlined admin tools.",
+    title: "KiloBoy Artwork",
+    summary: "Gallery and e-commerce for a Toronto-based artist. Dynamic catalogue, integrated payments and shipping, events calendar, and admin tools.",
     details: [
-      "Custom visual identity inspired by KiloBoy's high-energy style",
-      "Dynamic gallery with filterable artwork, product details, and an optimized shopping experience",
-      "Admin dashboard to manage artworks, pricing, availability, collections, shipping, and custom orders",
-      "Smooth cart & checkout flow with Stripe integration",
+      "Custom visual identity; filterable gallery and product details",
+      "Admin: artworks, pricing, collections, shipping, custom orders",
+      "Stripe checkout; Next.js and TypeScript stack",
     ],
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Vercel", "Git", "Trello"],
-    images: ["/images/kiloboy-homepageGIF.gif","/images/kiloboy-about.jpg"],
-    code: "https://github.com/TayrineSoares/kiloboy-artwork"},
-
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Vercel", "Git"],
+    images: ["/images/kiloboy-homepageGIF.gif", "/images/kiloboy-about.jpg"],
+    code: "https://github.com/TayrineSoares/kiloboy-artwork",
+  },
   {
-    title: "Byte to Bite - Recipe Finder Web App",
-    summary:
-      "A fun recipe finder where users can discover and save meals based on the ingredients they already have at home.",
+    title: "Byte to Bite",
+    summary: "Recipe finder: discover and save meals by ingredients you have. Real-time bookmarks, nutrition facts, timers, allergy flags.",
     details: [
-      "Search for recipes by entering available ingredients, powered by the Spoonacular API.",
-      "Bookmark favorite recipes with real-time updates.",
-      "Intuitive, responsive interface with recipe details, nutrition facts, custom timers, and allergy flags.",
+      "Spoonacular API; search by ingredients",
+      "Bookmark favorites with real-time updates",
+      "Responsive UI with recipe details and nutrition",
     ],
     tech: ["React", "Node.js", "PostgreSQL", "CSS", "Git"],
-    images: ["/images/byte-to-bite-desktop.gif","/images/byte-to-bite-tablet-landscape.png"],
-    code: "https://github.com/TayrineSoares/byte-to-bite"
+    images: ["/images/byte-to-bite-desktop.gif", "/images/byte-to-bite-tablet-landscape.png"],
+    code: "https://github.com/TayrineSoares/byte-to-bite",
   },
   {
-    title:"Mobile Byte to Bite - A React Native Project",
-    summary:"The mobile version of our fun recipe finder where users can browse, save, and post their favorite recipes.", 
-    details:[
-      "Browse recipes by entering available ingredients, powered by the Spoonacular API.", 
-      "User login and profile system via Clerk", 
-      "Bookmark recipes with real-time updates from Convex", 
-      "Clean, responsive UI with recipe detail modals", ],
-    tech: ["React Native", "Convex + Clerk", "Git", "CSS" ],
-    images: ["/images/byte-to-bite-mobile-favorites.gif", "/images/byte-to-bite-mobile-commenting.gif", "/images/byte-to-bite-mobile-search.gif"
-
+    title: "Byte to Bite Mobile",
+    summary: "React Native version: browse, save, and share recipes on the go. Auth and profile via Clerk; real-time data with Convex.",
+    details: [
+      "Ingredient-based search; bookmark and sync",
+      "Clerk auth and profile; Convex backend",
+      "Recipe detail modals and responsive layout",
     ],
+    tech: ["React Native", "Convex", "Clerk", "Git"],
+    images: ["/images/byte-to-bite-mobile-favorites.gif", "/images/byte-to-bite-mobile-commenting.gif", "/images/byte-to-bite-mobile-search.gif"],
     code: "https://github.com/TayrineSoares/byte-to-bite-mobile",
-
   },
 ];
 
@@ -72,9 +64,8 @@ const Projects = () => {
     <section id="projects">
       
       <div className="section-intro-container">
-        <p className="section-intro">Take a look at my recent </p>
-        <p className="section-title">Projects</p>
-
+        <p className="section-intro">What I've shipped</p>
+        <h2 className="section-title">Featured Projects</h2>
       </div>
       
       <div className="container projects-container">
@@ -83,57 +74,59 @@ const Projects = () => {
         <ul className="projects-list">
           {projects.map((p) => (
             <li key={p.title} className="project">
-              <h3 className="project-name">{p.title}</h3>
-              <p className="project-summary">{p.summary}</p>
-              <ul className="project-details">
-                {p.details.map((pdetail, i) => (
-                  <li key={i}>{pdetail}</li>
-                ))}
-                          
-              </ul>
-              <div className="project-tech">
-                {p.tech.map((tech, i) => 
-                <span key={i} className="project-tech-badge">
-                  {tech}
-                </span>)}
-              </div>
-
-              <div className="project-links">
-                {p.live && (
-                  <a 
-                  href={p.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-btn"
-                  aria-label={`Open ${p.title} live site`}
-                  >
-                    <ExternalLink size={16} />
-                    <span>Live</span>
-                  </a>
-                )}
-
-                {p.code && (
-                  <a
-                  href={p.code}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-btn"
-                  aria-label={`Open ${p.title} source code`}
-
-                  >
-                    <Github size={16} />
-                    <span>Code</span>
-                  </a>
-                )}
-              </div>
               {p.images?.length > 0 && (
-                <Carousel images={p.images} title={p.title} />
+                <div className="project-media-wrap">
+                  <Carousel images={p.images} title={p.title} />
+                  <div className="project-media-overlay" aria-hidden="true" />
+                </div>
               )}
-              
-            </li>
-            
-            
 
+              <div className="project-body">
+                <h3 className="project-name">{p.title}</h3>
+                <p className="project-summary">{p.summary}</p>
+                {p.impact && (
+                  <p className="project-impact">{p.impact}</p>
+                )}
+                <ul className="project-details">
+                  {p.details.map((pdetail, i) => (
+                    <li key={i}>{pdetail}</li>
+                  ))}
+                </ul>
+                <div className="project-tech">
+                  {p.tech.map((tech, i) => (
+                    <span key={i} className="project-tech-badge">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="project-links">
+                  {p.live && (
+                    <a
+                      href={p.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-btn"
+                      aria-label={`Open ${p.title} live site`}
+                    >
+                      <ExternalLink size={16} />
+                      <span>Live</span>
+                    </a>
+                  )}
+                  {p.code && (
+                    <a
+                      href={p.code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-btn"
+                      aria-label={`Open ${p.title} source code`}
+                    >
+                      <Github size={16} />
+                      <span>Code</span>
+                    </a>
+                  )}
+                </div>
+              </div>
+            </li>
           ))}
         </ul>
       </div>
