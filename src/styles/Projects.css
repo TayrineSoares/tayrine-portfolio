@@ -2,15 +2,15 @@ section {
   scroll-margin-top: 80px;
 }
 
-/* Project cards — glass, media on top */
+/* Project cards — stand out from background */
 .project {
-  background: var(--glass-bg);
+  background: var(--card-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--glass-border);
+  border: 1px solid var(--card-border);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-md), 0 0 0 1px rgba(0, 0, 0, 0.02);
   display: flex;
   flex-direction: column;
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);

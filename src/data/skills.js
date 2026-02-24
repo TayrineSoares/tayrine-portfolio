@@ -4,6 +4,7 @@ export const skills = [
   "React",
   "Node.js",
   "PostgreSQL",
+  "Tailwind CSS",
   "HTML5",
   "CSS3",
   "Git",

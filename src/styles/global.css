@@ -42,24 +42,28 @@
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.5);
   --surface-elevated: rgba(255, 255, 255, 0.04);
+  --card-bg: rgba(255, 255, 255, 0.06);
+  --card-border: rgba(255, 255, 255, 0.1);
   color-scheme: dark;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg: #fafafa;
+    --bg: #f0f0f2;
     --fg: #141416;
     --muted: #5c5c6b;
     --line: #e4e4e8;
     --accent: #5b21b6;
     --accent-glow: rgba(91, 33, 182, 0.2);
     --accent-subtle: rgba(91, 33, 182, 0.1);
-    --glass-bg: rgba(0, 0, 0, 0.02);
-    --glass-border: rgba(0, 0, 0, 0.06);
+    --glass-bg: rgba(0, 0, 0, 0.03);
+    --glass-border: rgba(0, 0, 0, 0.08);
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
     --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
     --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.12);
-    --surface-elevated: rgba(0, 0, 0, 0.03);
+    --surface-elevated: rgba(0, 0, 0, 0.04);
+    --card-bg: #ffffff;
+    --card-border: rgba(0, 0, 0, 0.1);
     color-scheme: light;
   }
 }
@@ -126,7 +130,7 @@ Container and section spacing
   padding: var(--space-4);
 }
 
-/* Basic section spacing — vertical rhythm */
+/* Basic section spacing */
 section {
   padding: var(--space-16) var(--space-6);
   border-top: 1px solid var(--line);
