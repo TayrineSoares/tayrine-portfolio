@@ -6,7 +6,8 @@ import Carousel from "./Carousel";
 const projects = [
   {
     title: "Earth Table Co",
-    summary: "Full-stack e-commerce for a holistic meal prep business. Integrated payments, admin dashboard, and inventory — built to scale with the business.",
+    summary1: "Full-stack e-commerce for a holistic meal prep business.",
+    summary2: "Integrated payments, admin dashboard, and inventory. Built to scale with the business.",
     impact: "30% increase in sales within the first month of launch.",
     details: [
       "Product catalogue with filterable menu items and clear categories",
@@ -19,8 +20,9 @@ const projects = [
     code: "https://github.com/TayrineSoares/earth-table",
   },
   {
-    title: "KiloBoy Artwork",
-    summary: "Gallery and e-commerce for a Toronto-based artist. Dynamic catalogue, integrated payments and shipping, events calendar, and admin tools.",
+    title: "KiloBoy Artwork (Under Development)",
+    summary1: "Gallery and e-commerce for a Toronto-based artist.",
+    summary2: "Dynamic catalogue, integrated payments and shipping, events calendar, and admin tools.",
     details: [
       "Custom visual identity; filterable gallery and product details",
       "Admin: artworks, pricing, collections, shipping, custom orders",
@@ -28,11 +30,13 @@ const projects = [
     ],
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Vercel", "Git"],
     images: ["/images/kiloboy-homepageGIF.gif", "/images/kiloboy-about.jpg"],
+    live: "https://miles-delta.vercel.app/",
     code: "https://github.com/TayrineSoares/kiloboy-artwork",
   },
   {
     title: "Byte to Bite",
-    summary: "Recipe finder: discover and save meals by ingredients you have. Real-time bookmarks, nutrition facts, timers, allergy flags.",
+    summary1: "Recipe finder: discover and save meals by ingredients you have.",
+    summary2: "Real-time bookmarks, nutrition facts, timers, allergy flags.",
     details: [
       "Spoonacular API; search by ingredients",
       "Bookmark favorites with real-time updates",
@@ -44,7 +48,8 @@ const projects = [
   },
   {
     title: "Byte to Bite Mobile",
-    summary: "React Native version: browse, save, and share recipes on the go. Auth and profile via Clerk; real-time data with Convex.",
+    summary1: "React Native version: browse, save, and share recipes on the go.",
+    summary2: "Auth and profile via Clerk; real-time data with Convex.",
     details: [
       "Ingredient-based search; bookmark and sync",
       "Clerk auth and profile; Convex backend",
@@ -64,7 +69,7 @@ const Projects = () => {
     <section id="projects">
       
       <div className="section-intro-container">
-        <p className="section-intro">What I've shipped</p>
+        <p className="section-intro">Take a look at my</p>
         <h2 className="section-title">Featured Projects</h2>
       </div>
       
@@ -83,7 +88,17 @@ const Projects = () => {
 
               <div className="project-body">
                 <h3 className="project-name">{p.title}</h3>
-                <p className="project-summary">{p.summary}</p>
+                <p className="project-summary">
+                  {p.summary1 && p.summary2 ? (
+                    <>
+                      {p.summary1}
+                      <br />
+                      {p.summary2}
+                    </>
+                  ) : (
+                    p.summary
+                  )}
+                </p>
                 {p.impact && (
                   <p className="project-impact">{p.impact}</p>
                 )}

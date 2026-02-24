@@ -4,7 +4,6 @@ import { MapPin, Compass, Braces, Building2, Network } from 'lucide-react';
 const heroTags = [
   { label: 'Toronto based', icon: MapPin },
   { label: 'Product-Minded', icon: Compass },
-  { label: 'Full-Stack Engineer', icon: Braces },
   { label: 'Engineering Foundation', icon: Building2 },
   { label: 'Systems Thinker', icon: Network },
 ];
@@ -18,7 +17,7 @@ const Hero = () => {
           <p className="intro">Hi, I'm Tayrine</p>
           <h1 className="hero-name">Full-Stack Developer</h1>
           <p className="hero-subheading">
-            Transitioning from Civil Engineering into software — I build real-world applications with a focus on <span className="highlight">UX, scalability, and clean code.</span>
+            I build real-world applications with a focus on <span className="highlight">usability, scalability, and clean architecture.</span>
           </p>
 
           <p className="hero-description">
@@ -30,7 +29,7 @@ const Hero = () => {
             <a href="https://mykitchenops.com" target="_blank" rel="noopener noreferrer">
               MyKitchenOps
             </a>
-            , working on a production app with React, Node.js, Supabase, and Tailwind — refactoring, bug fixes, and UX improvements.
+            , working on a production app with React, Node.js, Supabase, and Tailwind. Refactoring, bug fixes, and UX improvements are part of my daily work.
           </p>
 
           <div className="hero-tags">

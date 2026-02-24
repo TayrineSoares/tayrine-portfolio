@@ -80,7 +80,7 @@ TYPOGRAPHY
 Global font & base text styles
 ================================ */
 body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: var(--text-base);
   line-height: var(--line-normal);
   background-color: var(--bg);
@@ -145,11 +145,20 @@ section {
   }
 }
 
-/* Shared section title — product-style hierarchy */
+/* Shared section title — smaller than hero intro, black */
 .section-intro {
-  font-size: var(--text-lg);
-  color: var(--muted);
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000;
   margin-bottom: var(--space-2);
+}
+
+@media (prefers-color-scheme: dark) {
+  .section-intro {
+    color: var(--fg);
+  }
 }
 
 .section-title {

@@ -23,9 +23,18 @@ section {
 }
 
 .section-about-intro {
-  font-size: var(--text-lg);
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000;
   margin-bottom: var(--space-2);
-  color: var(--muted);
+}
+
+@media (prefers-color-scheme: dark) {
+  .section-about-intro {
+    color: var(--fg);
+  }
 }
 
 #about .section-title {
