@@ -174,8 +174,10 @@ section {
    HEADER & FOOTER
 ================================ */
 header {
-  background-color: var(--bg);
-  border-bottom: 1px solid var(--line);
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--glass-border);
   position: sticky;
   top: 0;
   z-index: 50;

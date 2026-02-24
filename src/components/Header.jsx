@@ -32,43 +32,39 @@ const Header = () => {
   return (
     <header>
       <div className="container header-container">
+        <a href="#hero" className="header-name" onClick={closeMenu}>
+          Tayrine Soares
+        </a>
 
-        {/* Mobile togglebutton */}
-        <button 
-          ref={buttonRef}
-          className={`menu-toggle ${open ? 'open' : ''}`}
-       
-          aria-label='Toggle navigation'
-          aria-expanded={open}
-          aria-controls="site-nav"
-          onClick={toggle}
-        >
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
-
-        </button>
-          
-        {/* Navigation */}
-        <nav>
-          <ul 
-            ref={menuRef}
-            id="site-nav"
-            className={`nav-list ${open ? 'nav-open' : ''}`}
+        <div className="header-right">
+          <button
+            ref={buttonRef}
+            className={`menu-toggle ${open ? 'open' : ''}`}
+            aria-label="Toggle navigation"
+            aria-expanded={open}
+            aria-controls="site-nav"
+            onClick={toggle}
           >
-            <li><a href="#hero" onClick={closeMenu}>Home</a></li>
-            <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
-            <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
-            <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
-            {/* <li><a href="#about" onClick={closeMenu}>About</a></li> */}
-            <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
-          </ul>
-        </nav>
-          
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </button>
 
+          <nav>
+            <ul
+              ref={menuRef}
+              id="site-nav"
+              className={`nav-list ${open ? 'nav-open' : ''}`}
+            >
+              <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
+              <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
+              <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
+              <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-
-     </header>
+    </header>
   );
 };
 
