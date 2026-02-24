@@ -3,7 +3,7 @@ import { FileText } from "lucide-react";
 
 const experience = [
   {
-    period: "2024 – Present",
+    period: "2025 - Present",
     role: "Full-Stack Developer Intern",
     company: "MyKitchenOps",
     companyUrl: "https://mykitchenops.com",
