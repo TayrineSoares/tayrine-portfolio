@@ -90,18 +90,20 @@
   transform: translateY(1px);
 }
 
-.menu-toggle .bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-  background: var(--fg);
-  margin: 4px 0;
-  border-radius: 2px;
-  transition: background var(--transition), opacity var(--transition);
+.menu-toggle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
 }
 
-.menu-toggle.open .bar {
-  background: var(--accent);
+.menu-toggle svg {
+  color: var(--fg);
+  transition: color var(--transition);
+}
+
+.menu-toggle.open svg {
+  color: var(--accent);
 }
 
 .menu-toggle:focus-visible {
@@ -124,23 +126,31 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding: var(--space-2);
   }
 
   .nav-list {
     position: absolute;
     right: var(--space-4);
-    top: calc(100% + var(--space-2));
-    background: var(--bg);
-    border: 1px solid var(--line);
-    padding: var(--space-2);
+    left: var(--space-4);
+    top: calc(100% + var(--space-4));
+    margin: 0;
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: blur(16px) saturate(150%);
+    -webkit-backdrop-filter: blur(16px) saturate(150%);
+    border: 1px solid var(--glass-border);
+    padding: var(--space-4);
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 2px;
-    min-width: 160px;
+    gap: 4px;
+    min-width: 0;
     z-index: 20;
-    border-radius: 12px;
+    border-radius: 16px;
     box-shadow: var(--shadow-lg);
+    isolation: isolate;
 
     pointer-events: none;
     opacity: 0;
@@ -154,11 +164,19 @@
     transform: translateY(0);
   }
 
+  .nav-list li {
+    list-style: none;
+    margin: 0;
+  }
+
   .nav-list a {
-    display: block;
-    padding: var(--space-2) var(--space-4);
-    border-radius: 8px;
-    font-size: var(--text-sm);
+    display: flex;
+    align-items: center;
+    padding: var(--space-4);
+    min-height: 44px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: var(--text-base);
     font-weight: 600;
     letter-spacing: 0.04em;
     color: var(--fg);

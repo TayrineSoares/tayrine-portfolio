@@ -2,6 +2,8 @@
 #hero {
   position: relative;
   overflow: hidden;
+  border-top: none;
+  padding-top: var(--space-8);
   background-color: var(--bg);
   background-image:
     radial-gradient(
@@ -185,11 +187,16 @@ section {
    RESPONSIVE
 ========================= */
 @media (max-width: 768px) {
+  #hero {
+    padding-top: var(--space-6);
+  }
+
   .hero-container {
     flex-direction: column;
     text-align: left;
     align-items: flex-start;
-    padding: 0;
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
   }
 
   .hero-text {
@@ -199,7 +206,7 @@ section {
 
   .hero-image {
     order: 1;
-    margin-bottom: 2rem;
+    margin-bottom: var(--space-8);
     align-self: center;
   }
 

@@ -1,7 +1,9 @@
 /** Shared list of skills — used by Skills section */
 export const skills = [
   "JavaScript",
+  "TypeScript",
   "React",
+  "Next.js",
   "Node.js",
   "PostgreSQL",
   "Tailwind CSS",
@@ -12,4 +14,5 @@ export const skills = [
   "Stripe",
   "Resend",
   "Vercel",
+  
 ];

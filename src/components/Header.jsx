@@ -1,5 +1,6 @@
 import '../styles/Header.css';
 import { useState, useEffect, useRef } from 'react';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -28,6 +29,12 @@ const Header = () => {
     return () => document.removeEventListener('click', handleClickOutside);
   }, [open]);
 
+  // Blur the hamburger when menu closes so it doesn't keep the purple focus look
+  useEffect(() => {
+    if (!open && buttonRef.current && document.activeElement === buttonRef.current) {
+      buttonRef.current.blur();
+    }
+  }, [open]);
 
   return (
     <header>
@@ -39,15 +46,16 @@ const Header = () => {
         <div className="header-right">
           <button
             ref={buttonRef}
+            type="button"
             className={`menu-toggle ${open ? 'open' : ''}`}
-            aria-label="Toggle navigation"
+            aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
             aria-controls="site-nav"
             onClick={toggle}
           >
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
+            <span className="menu-toggle-icon" aria-hidden>
+              {open ? <X size={22} strokeWidth={2} /> : <Menu size={22} strokeWidth={2} />}
+            </span>
           </button>
 
           <nav>

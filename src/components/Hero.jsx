@@ -29,7 +29,7 @@ const Hero = () => {
             <a href="https://mykitchenops.com" target="_blank" rel="noopener noreferrer">
               MyKitchenOps
             </a>
-            , working on a production SaaS built with React, Node.js, Supabase, and Tailwind. Refactoring, bug fixes, and UX improvements are part of my daily work.
+            , working on a production SaaS built with React, Node.js, Supabase, and Tailwind. Refactoring, debugging, documenting, and improving UX are part of my daily work.
           </p>
 
           <div className="hero-tags">
