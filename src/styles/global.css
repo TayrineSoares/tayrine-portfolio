@@ -1,6 +1,6 @@
 /* ============================================
    GLOBAL STYLES — Dark default, SaaS/tech
-   - Teal accent, glassmorphism, subtle glow
+   - Purple accent, glassmorphism, subtle glow
 ============================================ */
 
 :root {
@@ -9,9 +9,9 @@
   --fg: #f0f0f2;
   --muted: #8b8b9a;
   --line: #1e1e28;
-  --accent: #14b8a6;
-  --accent-glow: rgba(20, 184, 166, 0.25);
-  --accent-subtle: rgba(20, 184, 166, 0.12);
+  --accent: #8b5cf6;
+  --accent-glow: rgba(139, 92, 246, 0.25);
+  --accent-subtle: rgba(139, 92, 246, 0.12);
   --glass-bg: rgba(255, 255, 255, 0.03);
   --glass-border: rgba(255, 255, 255, 0.06);
   --content-max-width: 1100px;
@@ -51,9 +51,9 @@
     --fg: #141416;
     --muted: #5c5c6b;
     --line: #e4e4e8;
-    --accent: #0d9488;
-    --accent-glow: rgba(13, 148, 136, 0.2);
-    --accent-subtle: rgba(13, 148, 136, 0.08);
+    --accent: #5b21b6;
+    --accent-glow: rgba(91, 33, 182, 0.2);
+    --accent-subtle: rgba(91, 33, 182, 0.1);
     --glass-bg: rgba(0, 0, 0, 0.02);
     --glass-border: rgba(0, 0, 0, 0.06);
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
