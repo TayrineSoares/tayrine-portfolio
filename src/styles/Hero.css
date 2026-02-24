@@ -129,12 +129,13 @@ section {
   opacity: 0.9;
 }
 
+/* Lighter, more transparent highlighter behind phrases like "usability, scalability..." */
 .highlight {
   font-weight: 600;
   background: linear-gradient(
     transparent 35%,
-    color-mix(in srgb, var(--accent) 35%, transparent) 50%,
-    color-mix(in srgb, var(--accent) 35%, transparent) 85%,
+    color-mix(in srgb, var(--accent) 22%, transparent) 50%,
+    color-mix(in srgb, var(--accent) 22%, transparent) 85%,
     transparent 100%
   );
   padding: 0 0.15em;

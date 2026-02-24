@@ -152,9 +152,8 @@ section {
 }
 
 .project-impact {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   font-weight: 600;
-  color: var(--accent);
   margin: 0;
 }
 
@@ -245,7 +244,8 @@ section {
     padding-left: var(--space-2);
   }
 
-  .project-summary {
+  .project-summary,
+  .project-impact {
     font-size: var(--text-sm);
   }
 

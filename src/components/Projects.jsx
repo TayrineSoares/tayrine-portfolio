@@ -100,7 +100,9 @@ const Projects = () => {
                   )}
                 </p>
                 {p.impact && (
-                  <p className="project-impact">{p.impact}</p>
+                  <p className="project-impact">
+                    <span className="highlight">{p.impact}</span>
+                  </p>
                 )}
                 <ul className="project-details">
                   {p.details.map((pdetail, i) => (

@@ -21,7 +21,7 @@ const Hero = () => {
           </p>
 
           <p className="hero-description">
-            Former civil engineer and hospitality professional. I bring a <span className="highlight">structured, product-minded approach</span> to development: shipping features, solving real problems, and improving systems people actually use.
+            Former civil engineer and hospitality professional. I bring a <span className="highlight">structured, calm, and product-minded approach</span> to development: shipping features, solving real problems, and improving systems people actually use.
           </p>
 
           <p className="hero-description">
@@ -29,7 +29,7 @@ const Hero = () => {
             <a href="https://mykitchenops.com" target="_blank" rel="noopener noreferrer">
               MyKitchenOps
             </a>
-            , working on a production app with React, Node.js, Supabase, and Tailwind. Refactoring, bug fixes, and UX improvements are part of my daily work.
+            , working on a production SaaS built with React, Node.js, Supabase, and Tailwind. Refactoring, bug fixes, and UX improvements are part of my daily work.
           </p>
 
           <div className="hero-tags">
