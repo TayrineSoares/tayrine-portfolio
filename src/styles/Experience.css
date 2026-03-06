@@ -13,18 +13,20 @@ section {
 }
 
 .timeline-role-block + .timeline-role-block {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--card-border);
 }
 
 .timeline::before {
   content: "";
   position: absolute;
-  left: 7px;
+  left: 6px;
   top: 0;
   bottom: 0;
-  width: 2px;
-  background: linear-gradient(180deg, var(--accent), var(--line));
-  border-radius: 2px;
+  width: 3px;
+  background: var(--accent);
+  border-radius: 3px;
 }
 
 .timeline-item {
@@ -38,14 +40,14 @@ section {
 
 .timeline-marker {
   position: absolute;
-  left: calc(-1 * var(--space-8) + 2px);
+  left: calc(-1 * var(--space-8) + 1px);
   top: 0.4rem;
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background: var(--accent);
   border: 3px solid var(--bg);
-  box-shadow: 0 0 0 1px var(--accent), 0 0 16px var(--accent-glow);
+  box-shadow: 0 0 0 1px var(--accent), 0 0 24px var(--accent-glow);
 }
 
 .timeline-content {
@@ -63,7 +65,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 4px;
+  margin-bottom: 0;
 }
 
 @media (hover: hover) {
@@ -79,7 +81,7 @@ section {
   font-family: ui-monospace, monospace;
   letter-spacing: 0.05em;
   color: var(--accent);
-  margin-bottom: var(--space-2);
+  margin: 0 0 var(--space-2);
 }
 
 .timeline-role {
@@ -93,7 +95,7 @@ section {
 .timeline-company {
   font-size: var(--text-base);
   color: var(--muted);
-  margin: 0 0 var(--space-4);
+  margin: 0 0 var(--space-2);
 }
 
 .timeline-company a {

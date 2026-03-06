@@ -44,20 +44,20 @@ const experience = [
       },
     ],
   },
-  {
-    roles: [
-      {
-        period: "2024 - 2025",
-        role: "Web Development Program",
-        company: "Lighthouse Labs",
-        highlights: [
-          "Completed an intensive full-stack program covering React, Node.js, PostgreSQL, APIs, authentication, and deployment",
-          "Developed full-stack projects applying modern web technologies",
-          "Worked in pair-programming environments and agile-style development workflows"
-        ],
-      },
-    ],
-  },
+  // {
+  //   roles: [
+  //     {
+  //       period: "2024 - 2025",
+  //       role: "Web Development Program",
+  //       company: "Lighthouse Labs",
+  //       highlights: [
+  //         "Completed an intensive full-stack program covering React, Node.js, PostgreSQL, APIs, authentication, and deployment",
+  //         "Developed full-stack projects applying modern web technologies",
+  //         "Worked in pair-programming environments and agile-style development workflows"
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     roles: [
       {
@@ -92,8 +92,10 @@ const Experience = () => {
                 {group.roles.map((role, j) => (
                   <div key={j} className="timeline-role-block">
 
+                    <p className="timeline-period">{role.period}</p>
+                    <h3 className="timeline-role">{role.role}</h3>
                     <div className="timeline-header">
-                      {role.company && (
+                      {role.company && j === 0 && (
                         <p className="timeline-company">
                           {role.companyUrl ? (
                             <a
@@ -108,11 +110,7 @@ const Experience = () => {
                           )}
                         </p>
                       )}
-
-                      <p className="timeline-period">{role.period}</p>
                     </div>
-
-                    <h3 className="timeline-role">{role.role}</h3>
 
                     <ul className="timeline-highlights">
                       {role.highlights.map((h, k) => (

@@ -27,7 +27,7 @@ const Hero = () => {
             <a href="https://mykitchenops.com" target="_blank" rel="noopener noreferrer">
               MyKitchenOps 
             </a>
-            , I collaborate  across <span className="highlight">engineering and product</span> on a production SaaS for kitchen operations: improving workflows, documenting system architecture, and <span className="highlight">translating real-world processes into scalable software features.</span>
+            , I collaborate  across <span className="highlight">engineering and product</span> on a SaaS for kitchen operations: improving workflows, documenting system architecture, and <span className="highlight">translating real-world processes into scalable software features.</span>
           </p>
 
           <p className="hero-description">
