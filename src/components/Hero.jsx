@@ -1,5 +1,5 @@
 import '../styles/Hero.css';
-import { MapPin, Compass, Braces, Building2, Network } from 'lucide-react';
+import { MapPin, Compass, Building2, Network } from 'lucide-react';
 
 const heroTags = [
   { label: 'Toronto based', icon: MapPin },
@@ -15,26 +15,23 @@ const Hero = () => {
         {/* Left: Text */}
         <div className="hero-text">
           <p className="intro">Hi, I'm Tayrine</p>
-          <h1 className="hero-name">Full-Stack Developer</h1>
+          <h1 className="hero-name">Software Engineer</h1>
           <p className="hero-subheading">
             I build real-world applications with a focus on <span className="highlight">usability, scalability, and clean architecture.</span>
           </p>
 
+          
+
           <p className="hero-description">
-            Former civil engineer and hospitality professional, I bring a <span className="highlight">structured, calm, and product-minded approach</span> to development: shipping features, solving real problems, and improving systems people actually enjoy using.
+            Currently working at{" "}
+            <a href="https://mykitchenops.com" target="_blank" rel="noopener noreferrer">
+              MyKitchenOps 
+            </a>
+            , I collaborate  across <span className="highlight">engineering and product</span> on a production SaaS for kitchen operations: improving workflows, documenting system architecture, and <span className="highlight">translating real-world processes into scalable software features.</span>
           </p>
 
           <p className="hero-description">
-            I am currently a <span className="highlight">Full-Stack Developer</span> at{" "}
-            <a href="https://mykitchenops.com" target="_blank" rel="noopener noreferrer">
-              MyKitchenOps
-            </a>
-            , contributing to a production SaaS for kitchen operations.
-            <br />
-            I work across <span className="highlight">engineering and product</span> to improve workflows, document system architecture, and{" "}
-            <span className="highlight">
-              translate real-world processes into scalable software features
-            </span>.
+            As a former civil engineer and hospitality professional, I bring a <span className="highlight">structured, calm, and product-minded approach</span> to development: shipping features, solving real problems, and improving systems people actually enjoy using.
           </p>
 
           <div className="hero-tags">
