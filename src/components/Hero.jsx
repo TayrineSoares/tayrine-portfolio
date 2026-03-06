@@ -25,11 +25,16 @@ const Hero = () => {
           </p>
 
           <p className="hero-description">
-            I am currently a <span className="highlight">Full-Stack Developer Intern</span> at{" "}
+            I am currently a <span className="highlight">Full-Stack Developer</span> at{" "}
             <a href="https://mykitchenops.com" target="_blank" rel="noopener noreferrer">
               MyKitchenOps
             </a>
-            , working on a production SaaS built with React, Node.js, Supabase, and Tailwind. Refactoring, debugging, documenting, and improving UX are part of my daily work.
+            , contributing to a production SaaS for kitchen operations.
+            <br />
+            I work across <span className="highlight">engineering and product</span> to improve workflows, document system architecture, and{" "}
+            <span className="highlight">
+              translate real-world processes into scalable software features
+            </span>.
           </p>
 
           <div className="hero-tags">

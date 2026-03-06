@@ -4,22 +4,35 @@ import { FileText } from "lucide-react";
 const experience = [
   {
     period: "2025 - Present",
-    role: "Full-Stack Developer Intern",
+    role: "Full-Stack Developer",
     company: "MyKitchenOps",
     companyUrl: "https://mykitchenops.com",
     highlights: [
-      "Ship features and fixes on a production app with React, Node.js, Supabase, Tailwind",
-      "Refactor code for maintainability; fix bugs and improve UX with senior engineers"
+      "Ship features and fixes on a production SaaS built with React, Node.js, Supabase, and Tailwind",
+      "Improve operational workflows by translating real kitchen processes into scalable software features",
+      "Document system architecture and implementation plans to support product and engineering decisions",
+      "Refactor production code, resolve bugs, and improve reliability, maintainability, and UX"
     ],
   },
   {
-    period: "2024",
+    period: "2025 - Present",
+    role: "Freelance Developer",
+    company: "Self-Employed",
+    highlights: [
+      "Built and launched custom web applications for small businesses",
+      "Developed full-stack systems and scalable database models using Next.js, React, Node.js, and PostgreSQL",
+      "Integrated third-party services such as Stripe for payments and shipping APIs for logistics",
+      "Deployed and maintained applications using Vercel, GitHub, and modern development workflows"
+    ],
+  },
+  {
+    period: "2024 - 2025",
     role: "Web Development Program",
     company: "Lighthouse Labs",
     highlights: [
-      "Full-stack curriculum: React, Node, PostgreSQL, APIs, auth, deployment",
-      "Built and shipped multiple projects end-to-end",
-      "Pair programming and agile workflows",
+      "Completed an intensive full-stack program covering React, Node.js, PostgreSQL, APIs, authentication, and deployment",
+      "Developed full-stack projects applying modern web technologies",
+      "Worked in pair-programming environments and agile-style development workflows"
     ],
   },
   {
@@ -27,7 +40,7 @@ const experience = [
     role: "Civil Engineering & Hospitality",
     company: null,
     highlights: [
-      "Structured problem-solving and attention to detail",
+      "Structured problem-solving, process optimization, and attention to detail",
       "Collaboration and client-facing work",
       "Pivot into software with a product-minded, impact-focused approach",
     ],
