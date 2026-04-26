@@ -4,8 +4,7 @@
   overflow: hidden;
   border-top: none;
   padding-top: var(--space-8);
-  background-color: var(--bg);
-  background-image:
+  /* background-image:
     radial-gradient(
       ellipse 100% 80% at 60% 40%,
       var(--accent-subtle),
@@ -14,7 +13,11 @@
     linear-gradient(var(--line) 1px, transparent 1px),
     linear-gradient(90deg, var(--line) 1px, transparent 1px);
   background-size: 100% 100%, 32px 32px, 32px 32px;
-  background-position: 0 0, 0 0, 0 0;
+  background-position: 0 0, 0 0, 0 0; */
+  background-image: url('/blueprintbg.png');
+  background-size: 1240px;
+  background-repeat: repeat;
+
 }
 
 #hero::after {
