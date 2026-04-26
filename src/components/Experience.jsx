@@ -10,10 +10,10 @@ const experience = [
         company: "MyKitchenOps",
         companyUrl: "https://mykitchenops.com",
         highlights: [
+          " Translate restaurant operations into scalable software features that improve operational workflows",
           "Ship features and fixes on a production SaaS built with React, Node.js, Supabase, and Tailwind",
-          "Improve operational workflows by translating real kitchen processes into scalable software features",
-          "Document system architecture and implementation plans to support product and engineering decisions",
-          "Refactor production code, resolve bugs, and improve reliability, maintainability, and UX"
+          // "Document system architecture and implementation plans to support product and engineering decisions",
+          // "Refactor production code, resolve bugs, and improve reliability, maintainability, and UX"
         ],
       },
       {
@@ -22,9 +22,9 @@ const experience = [
         company: "MyKitchenOps",
         companyUrl: "https://mykitchenops.com",
         highlights: [
-          "Implemented user-facing features in a production SaaS application, collaborating closely with senior engineers",
+          "Collaborated closely with senior engineers implementing user-facing features in SaaS application",
           "Refactored legacy components and resolved full-stack issues to improve performance, reliability, and maintainability",
-          "Participated in code reviews, sprint planning, and ticket-based development within an agile engineering workflow"
+          // "Participated in code reviews, sprint planning, and ticket-based development within an agile engineering workflow"
         ],
       },
     ],
@@ -36,10 +36,10 @@ const experience = [
         role: "Full-Stack Web Developer",
         company: "Freelance / Self-Employed",
         highlights: [
-          "Built and launched custom web applications for small businesses",
+          "Built and launched custom web applications for small businesses, owning the full development process from frontend and backend to deployment.",
           "Developed full-stack systems and scalable database models using Next.js, React, Node.js, and PostgreSQL",
-          "Integrated third-party services such as Stripe for payments and shipping APIs for logistics",
-          "Deployed and maintained applications using Vercel, GitHub, and modern development workflows"
+          // "Integrated third-party services such as Stripe for payments and shipping APIs for logistics",
+          // "Deployed and maintained applications using Vercel, GitHub, and modern development workflows"
         ],
       },
     ],

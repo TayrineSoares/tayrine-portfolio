@@ -22,7 +22,7 @@ const Hero = () => {
 
           <p className="hero-description">
             Before tech, I worked in civil engineering and hospitality, which shaped how I work today: 
-            <span className="highlight"> structured, calm, and focused on solving real problems.</span>            
+            <span className="highlight">structured, calm, and focused on solving real problems.</span>            
           </p>
 
           <img 
