@@ -17,31 +17,42 @@ const Hero = () => {
           <p className="intro">Hi, I'm Tayrine</p>
           <h1 className="hero-name">Software Engineer</h1>
           <p className="hero-subheading">
-            I build real-world applications with a focus on <span className="highlight">usability, scalability, and clean architecture.</span>
+            I enjoy building applications that <span className="highlight">work well</span> and <span className="highlight">feel good</span> to use.
           </p>
 
-          
+          <p className="hero-description">
+            Before tech, I worked in civil engineering and hospitality, which shaped how I work today: 
+            <span className="highlight"> structured, calm, and focused on solving real problems.</span>            
+          </p>
+
+          <img 
+            src="/images/intersection-arrow-Picsart-BackgroundRemover.png" 
+            alt="Intersection"
+            style={{ width: "520px" }}
+          />
 
           <p className="hero-description">
+            Now, I apply that to building software that's practical, scalable, and easy to use.
+          </p>
+
+          {/* <p className="hero-description">
             Currently working at{" "}
             <a href="https://mykitchenops.com" target="_blank" rel="noopener noreferrer">
               MyKitchenOps 
             </a>
             , I collaborate  across <span className="highlight">engineering and product</span> on a SaaS for kitchen operations: improving workflows, documenting system architecture, and <span className="highlight">translating real-world processes into scalable software features.</span>
-          </p>
+          </p> */}
 
-          <p className="hero-description">
-            As a former civil engineer and hospitality professional, I bring a <span className="highlight">structured, calm, and product-minded approach</span> to development: shipping features, solving real problems, and improving systems people actually enjoy using.
-          </p>
+        
 
-          <div className="hero-tags">
+          {/* <div className="hero-tags">
             {heroTags.map(({ label, icon: Icon }) => (
               <span key={label} className="hero-tag">
                 <Icon size={16} aria-hidden />
                 <span>{label}</span>
               </span>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Right: Image */}
