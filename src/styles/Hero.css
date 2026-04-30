@@ -3,7 +3,6 @@
   position: relative;
   overflow: hidden;
   border-top: none;
-  padding-top: var(--space-8);
   /* background-image:
     radial-gradient(
       ellipse 100% 80% at 60% 40%,
@@ -17,6 +16,7 @@
   background-image: url('/blueprintbg.png');
   background-size: 1240px;
   background-repeat: repeat;
+  padding-bottom: 0;
 
 }
 
@@ -66,6 +66,7 @@ section {
   text-transform: uppercase;
   margin-bottom: var(--space-2);
   color: var(--accent);
+  
 }
 
 .hero-name {
@@ -91,6 +92,7 @@ section {
   font-size: var(--text-base);
   line-height: var(--line-relaxed);
   margin-bottom: var(--space-6);
+  
 }
 
 .hero-description a {
@@ -107,35 +109,11 @@ section {
 }
 
 
-.hero-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-  margin-top: var(--space-6);
-}
-
-.hero-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: var(--text-sm);
-  font-weight: 500;
-  color: var(--muted);
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  border-radius: 999px;
-  padding: 0.35rem 0.75rem;
-  transition: border-color var(--transition), color var(--transition);
-}
-
-.hero-tag:hover {
-  color: var(--accent);
-  border-color: var(--accent);
-}
-
-.hero-tag svg {
-  flex-shrink: 0;
-  opacity: 0.9;
+.hero-arrow {
+  width: 100%; /* shrinks with the column */
+  max-width: 520px;
+  height: auto;
+  display: block;
 }
 
 /* Lighter, more transparent highlighter behind phrases like "usability, scalability..." */
@@ -219,5 +197,10 @@ section {
   .hero-image img {
     max-width: 220px;
   }
+
+  .hero-arrow {
+  max-width: 320px; 
+  margin: 0 auto;   /* center */
+}
 }
 

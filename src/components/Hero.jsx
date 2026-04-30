@@ -28,12 +28,12 @@ const Hero = () => {
           <img 
             src="/images/intersection-arrow-Picsart-BackgroundRemover.png" 
             alt="Intersection"
-            style={{ width: "520px" }}
+            className="hero-arrow"
           />
 
-          <p className="hero-description">
+          {/* <p className="hero-description">
             Now, I apply that to building software that's practical, scalable, and easy to use.
-          </p>
+          </p> */}
 
           {/* <p className="hero-description">
             Currently working at{" "}
@@ -43,16 +43,7 @@ const Hero = () => {
             , I collaborate  across <span className="highlight">engineering and product</span> on a SaaS for kitchen operations: improving workflows, documenting system architecture, and <span className="highlight">translating real-world processes into scalable software features.</span>
           </p> */}
 
-        
-
-          {/* <div className="hero-tags">
-            {heroTags.map(({ label, icon: Icon }) => (
-              <span key={label} className="hero-tag">
-                <Icon size={16} aria-hidden />
-                <span>{label}</span>
-              </span>
-            ))}
-          </div> */}
+      
         </div>
 
         {/* Right: Image */}
