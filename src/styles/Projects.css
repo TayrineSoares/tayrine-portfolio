@@ -2,6 +2,7 @@ section {
   scroll-margin-top: 80px;
 }
 
+
 /* Project cards — stand out from background */
 .project {
   background: var(--card-bg);
