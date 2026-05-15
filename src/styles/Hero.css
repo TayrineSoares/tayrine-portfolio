@@ -120,30 +120,45 @@ section {
   align-items: center;
 }
 
-.hero-image::before {
+/* first hand-drawn ring */
+.hero-image::before,
+.hero-image::after {
   content: "";
   position: absolute;
-  inset: -6px;
   border-radius: 50%;
-  background: var(--accent);
-  opacity: 0.25;
-  filter: blur(16px);
-  z-index: -1;
   pointer-events: none;
 }
 
+/* outer line */
+.hero-image::before {
+  inset: -10px;
+  border: 2px solid var(--accent);
+  opacity: 0.7;
+  transform: rotate(-4deg);
+}
+
+/* second imperfect line */
+.hero-image::after {
+  inset: -4px;
+  border: 1.5px solid var(--accent);
+  opacity: 0.5;
+  transform: rotate(3deg);
+}
+
 .hero-image img {
-  max-width: min(340px, 38vw);
-  
+  max-width: min(360px, 38vw);
   width: 100%;
   aspect-ratio: 1;
-  border-radius: 50%;
   object-fit: cover;
-  border: 1px solid var(--accent);
+
+  /* more organic shape */
+  border-radius: 47% 53% 51% 49% / 48% 44% 56% 52%;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  /* softer shadow */
   box-shadow:
-    0 0 0 2px var(--accent-subtle),
-    0 0 24px var(--accent-glow),
-    0 16px 40px rgba(0, 0, 0, 0.3);
+    0 10px 30px rgba(0, 0, 0, 0.18);
 }
 
 /* =========================

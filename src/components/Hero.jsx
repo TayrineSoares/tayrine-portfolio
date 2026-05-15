@@ -17,12 +17,13 @@ const Hero = () => {
           <p className="intro">Hi, I'm Tayrine</p>
           <h1 className="hero-name">Software Engineer</h1>
           <p className="hero-subheading">
-            I enjoy building applications that <span className="highlight">work well</span> and <span className="highlight">feel good</span> to use.
+            I enjoy building applications that <span className="highlight">work well</span> and <span className="highlight">feel good</span> to use. 
           </p>
 
           <p className="hero-description">
             Before tech, I worked in civil engineering and hospitality, which shaped how I work today: 
-            <span className="highlight">structured, calm, and focused on solving real problems.</span>            
+            <span className="highlight">structured, calm, and focused on solving real problems. </span> <br/> <br/>
+            Now, I apply that to building software with a focus <span className="highlight">usability, scalability</span>, and <span className="highlight">clean architecture</span>.       
           </p>
 
           <img 
@@ -31,9 +32,9 @@ const Hero = () => {
             className="hero-arrow"
           />
 
-          {/* <p className="hero-description">
-            Now, I apply that to building software that's practical, scalable, and easy to use.
-          </p> */}
+          <p className="hero-description">
+            
+          </p>
 
           {/* <p className="hero-description">
             Currently working at{" "}
