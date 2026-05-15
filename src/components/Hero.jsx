@@ -1,56 +1,59 @@
 import '../styles/Hero.css';
-import { MapPin, Compass, Building2, Network } from 'lucide-react';
 
-const heroTags = [
-  { label: 'Toronto based', icon: MapPin },
-  { label: 'Product-Minded', icon: Compass },
-  { label: 'Engineering Foundation', icon: Building2 },
-  { label: 'Systems Thinker', icon: Network },
-];
 
 const Hero = () => {
   return (
     <section id="hero">
+
       <div className="container hero-container">
-        {/* Left: Text */}
+
+        {/* TOP CONTAINER - TEXT + PROFILE PIC SIDE BY SIDE */}
         <div className="hero-text">
-          <p className="intro">Hi, I'm Tayrine</p>
-          <h1 className="hero-name">Software Engineer</h1>
-          <p className="hero-subheading">
-            I enjoy building applications that <span className="highlight">work well</span> and <span className="highlight">feel good</span> to use. 
-          </p>
+          <div className="hero-text-left">
+             <p className="intro">Hi, I'm Tayrine</p>
+            <h1 className="hero-name">Software Engineer</h1>
+            <p className="hero-subheading">
+              I enjoy building applications that <span className="highlight">work well</span> and <span className="highlight">feel good</span> to use. 
+            </p> 
+        
+              <p className="hero-description" >While I work across the full stack, my soft spot is the  <span className="highlight">frontend</span> : where code meets design and details shape how something feels.</p>
 
-          <p className="hero-description">
-            Before tech, I worked in civil engineering and hospitality, which shaped how I work today: 
-            <span className="highlight">structured, calm, and focused on solving real problems. </span> <br/> <br/>
-            Now, I apply that to building software with a focus <span className="highlight">usability, scalability</span>, and <span className="highlight">clean architecture</span>.       
-          </p>
+          </div>
+         
 
-          <img 
-            src="/images/intersection-arrow-Picsart-BackgroundRemover.png" 
-            alt="Intersection"
-            className="hero-arrow"
-          />
+            {/* PROFILE PICTURE */}
+            <div className="hero-image">
+              <img src="/Tayrine_Soares_3.jpg" alt="Tayrine Soares" />
+            </div>
 
-          <p className="hero-description">
-            
-          </p>
+            <hr className="hero-divider" />
 
-          {/* <p className="hero-description">
-            Currently working at{" "}
-            <a href="https://mykitchenops.com" target="_blank" rel="noopener noreferrer">
-              MyKitchenOps 
-            </a>
-            , I collaborate  across <span className="highlight">engineering and product</span> on a SaaS for kitchen operations: improving workflows, documenting system architecture, and <span className="highlight">translating real-world processes into scalable software features.</span>
-          </p> */}
+          </div>
 
-      
-        </div>
 
-        {/* Right: Image */}
-        <div className="hero-image">
-          <img src="/Tayrine_Soares_3.jpg" alt="Tayrine Soares" />
-        </div>
+          {/* BOTTOM - VENN DIAGRAM + TEXT SIDE BY SIDE  */}
+       
+
+          <div className="hero-venn-row">
+         
+               <img 
+                src="/images/intersection-arrow-Picsart-BackgroundRemover.png" 
+                alt="Intersection"
+                className="hero-venn"
+              />
+           
+            <div className="hero-venn-text">
+              <p className="hero-description">
+                Before tech, I worked in civil engineering and hospitality, which shaped how I work today: <span className="highlight">structured, calm, and focused on solving real problems. </span> 
+              </p>
+
+              <p className="hero-description">
+                Now, I apply that to building software with a focus on <span className="highlight">usability, scalability</span>, and <span className="highlight">clean architecture</span>.  
+              </p>
+            </div>
+
+          </div>
+
       </div>
     </section>
   );
@@ -58,3 +61,5 @@ const Hero = () => {
 
 export default Hero;
 
+
+           
