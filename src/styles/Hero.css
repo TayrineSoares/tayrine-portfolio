@@ -36,7 +36,7 @@ section {
 
 .hero-text-left {
   flex: 1 1 auto;
-  min-width: 550px;
+  min-width: 0;
 }
 .intro {
   font-size: clamp(1rem, 2vw, 1.35rem);
@@ -48,8 +48,21 @@ section {
 }
 
 .hero-name {
-  font-size: clamp(2.5rem, 6vw, 4rem);
-  font-weight: 800;
+
+  /* 
+    clamp(MIN, PREFERRED, MAX)
+
+    MIN → the smallest size allowed
+    PREFERRED → responsive scaling based on viewport width
+    MAX → the largest size allowed
+
+    - on small screens → font won't go below 2.2rem
+    - on medium screens → font scales with 5vw
+    - on large screens → font won't grow past 3.5rem
+  */
+
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 600;
   line-height: 1.1;
   letter-spacing: -0.04em;
   margin-bottom: var(--space-4);
@@ -92,7 +105,7 @@ section {
   display: flex;
   align-items: flex-start;
   margin-top: 40px;
-  margin-left: 120px;
+  margin-left: clamp(1rem, 6vw, 120px);
 }
 
 .hero-image img {
@@ -126,15 +139,6 @@ section {
   transform: rotate(3deg);
 }
 
-/* =========================
-   DIVIDER
-========================= */
-.hero-divider {
-  border: none;
-  border-top: 0.5px solid color-mix(in srgb, var(--fg) 15%, transparent);
-  margin: var(--space-6) 0;
-  width: 100%;
-}
 
 /* =========================
    BOTTOM ROW: VENN + TEXT
@@ -184,38 +188,58 @@ section {
 }
 
 /* =========================
-   RESPONSIVE
+   MOBILE
 ========================= */
 @media (max-width: 768px) {
+  section {
+    padding-inline: var(--space-4);
+  }
+  
   #hero {
     padding-top: var(--space-6);
   }
 
-  .hero-container {
-    padding-left: var(--space-4);
-    padding-right: var(--space-4);
-  }
-
-  .hero-text {
+  
+  /* TOP SECTION */
+   .hero-text {
     flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-6);
   }
 
+
+
+  /* IMAGE */
   .hero-image {
     align-self: center;
     margin-top: 0;
     margin-bottom: var(--space-6);
+    margin-left: 0px;
   }
 
   .hero-image img {
-    width: 220px;
+    width: min(220px, 60vw);
   }
 
   .hero-venn-row {
     flex-direction: column;
+    
   }
 
   .hero-venn {
-    width: 200px;
+    width: min(320px, 80vw);
     margin: 0 auto;
+  }
+
+  .hero-venn-text {
+    margin: 0 auto;
+    text-align: center;
+     
+  }
+
+  .hero-subheading,
+  .hero-description {
+    max-width: 38ch;
   }
 }
