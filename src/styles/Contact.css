@@ -67,6 +67,12 @@ section {
   text-decoration: underline;
 }
 
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 @media (max-width: 768px) {
   .contact-icons {
     gap: var(--space-4);

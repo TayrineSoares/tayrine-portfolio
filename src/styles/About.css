@@ -6,12 +6,13 @@
 
 /* Place both children in the centered column */
 #about > .section-about-intro-container,
-#about > .about-content {
+#about > .about-content,
+#about > .about-gallery {
   grid-column: 2;
 }
 
 section {
-  scroll-margin-top: 80px; /* adjust to your header height */
+  scroll-margin-top: 80px; /* adjust to  header height */
 }
 
 /* =========================
@@ -31,12 +32,6 @@ section {
   margin-bottom: var(--space-2);
 }
 
-@media (prefers-color-scheme: dark) {
-  .section-about-intro {
-    color: var(--fg);
-  }
-}
-
 #about .section-title {
   margin-bottom: var(--space-6);
 }
@@ -54,24 +49,95 @@ section {
   gap: var(--space-4);
 }
 
+#about .section-title {
+  margin-bottom: var(--space-6);
+}
+/* =========================
+   CONTENT
+========================= */
+.about-content {
+  width: min(900px, 100%);
+  justify-self: start;
+  text-align: left;
+  display: grid;
+  font-size: var(--text-base);
+  line-height: var(--line-relaxed);
+  gap: var(--space-4);
+}
+
 .about-content p {
   margin: 0;
 }
 
+/* =========================
+   GALLERY
+========================= */
+.about-gallery {
+  margin-top: var(--space-10);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.about-gallery img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 22px;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-md);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.about-gallery img:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
 
 /* =========================
    RESPONSIVE
 ========================= */
+
+@media (max-width: 900px) {
+  .about-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-gallery img {
+    height: 340px;
+  }
+}
+
 @media (max-width: 768px) {
   .about-content {
     font-size: var(--text-sm);
     line-height: 1.6;
     gap: var(--space-4);
   }
+
+  .about-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .about-gallery img {
+    height: 260px;
+    border-radius: 18px;
+  }
 }
 
 @media (max-width: 500px) {
   .about-content {
     font-size: var(--text-sm);
+  }
+
+  .about-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .about-gallery img {
+    height: 320px;
   }
 }

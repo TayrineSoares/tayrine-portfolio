@@ -6,7 +6,7 @@ const Contact = () => {
     <section id="contact">
       <div className="section-intro-container">
         <p className="section-intro">Want to connect?</p>
-        <h2 className="section-title">Get in touch</h2>
+        <h2 className="section-title">Get in touch!</h2>
       </div>
 
       <div className="contact-content">
@@ -38,6 +38,20 @@ const Contact = () => {
             <Mail size={18} aria-hidden />
             <a href="mailto:tayrinecristina@hotmail.com">tayrinecristina@hotmail.com</a>
           </p>
+
+        
+         <div className="contact-row">
+          <FileText size={18} aria-hidden />
+          
+          <a
+            href="/Tayrine_Soares_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View my Resume
+          </a>
+        </div>
+  
         
         </div>
       </div>
