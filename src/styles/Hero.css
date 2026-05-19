@@ -203,8 +203,8 @@ section {
   /* TOP SECTION */
    .hero-text {
     flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     gap: var(--space-6);
   }
 
@@ -225,6 +225,7 @@ section {
   .hero-venn-row {
     flex-direction: column;
     
+    
   }
 
   .hero-venn {
@@ -234,7 +235,8 @@ section {
 
   .hero-venn-text {
     margin: 0 auto;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
      
   }
 
