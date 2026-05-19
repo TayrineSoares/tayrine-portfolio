@@ -34,7 +34,7 @@ const projects = [
     summary1:
       "A full-stack e-commerce for a chef services and meal prep business.",
     summary2:
-      "Designed to simplify day-to-day operations so the team can spend more time focused on the food.",
+      "Designed to simplify the ordering proccess, so the team can spend more time cooking.",
     impact: "30% increase in sales within the first month of launch.",
     details: [
       "Product catalogue with filterable menu items and clear categories",
