@@ -3,6 +3,32 @@ import { ExternalLink, Github } from "lucide-react";
 import Carousel from "./Carousel";
 
 const projects = [
+
+  {
+    title: "MyKitchenOps",
+    summary1:
+      "A SaaS to streamline kitchen operations.",
+    summary2:
+      "All-in-one platform for inventory, recipes, purchasing, and production tracking",
+    details: [
+      "Operational dashboards and workflow tools tailored for modern kitchens",
+      "Flexible workflows for kitchens with or without POS integrations",
+      "Designed to reduce manual processes and improve kitchen efficiency",
+
+   
+    ],
+    tech: [
+      "React",
+      "Node.js",
+      "Supabase",
+      "Tailwind CSS",
+      "Vercel",
+      "Git",
+    ],
+    images: ["/images/mykitchenops.gif"],
+    live: "https://www.mykitchenops.com/",
+  },
+
   {
     title: "Earth Table Co",
     summary1:
@@ -39,7 +65,7 @@ const projects = [
       "Service sections, contact flow, and class information",
     ],
     tech: ["React", "Tailwind CSS", "Vercel", "Git"],
-    images: ["/images/yogana.jpg"],
+    images: ["/images/yogana-gif2.gif"],
     live: "https://yogana.vercel.app/",
     code: "https://github.com/TayrineSoares/yogana-portfolio",
   },
@@ -56,7 +82,7 @@ const projects = [
       "Admin tools for managing artwork catalogue, shipping, and orders",
     ],
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Vercel", "Git"],
-    images: ["/images/kiloboy-homepage.jpg", "/images/kiloboy-about.jpg"],
+    images: ["/images/kiloboy-homepage.gif", "/images/kiloboy-custom.gif"],
     live: "https://kiloboyartworkstudio.com/",
     code: "https://github.com/TayrineSoares/kiloboy-artwork",
   },

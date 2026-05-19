@@ -109,10 +109,10 @@ section {
 .projects-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-12);
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  gap: var(--space-10);
+  max-width: 850px;
+  margin: 0 auto;
+
 }
 
 .project-tech {
@@ -220,6 +220,8 @@ section {
 
 
 /* --- Slightly larger headings on wider screens --- */
+
+
 @media (min-width: 700px) {
   .project-name { font-size: 1.4rem; }
   .project-summary { font-size: 1rem; }

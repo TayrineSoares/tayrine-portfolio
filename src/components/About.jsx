@@ -9,15 +9,31 @@ const About = () => {
       </div>
 
       <div className="about-content">
-        <p>
-          I'm Tayrine — born in Brazil, based in Toronto. I've always been drawn to <strong>solving problems</strong> and <strong>technology</strong>; the shift from civil engineering into software was a deliberate move toward building products that people actually use.
-        </p>
-        <p>
-          After <strong>Lighthouse Labs' Web Development Program</strong>, I've been shipping full-stack projects and learning from production code at <strong>MyKitchenOps</strong>. I care about clean code, scalability, and UX that holds up under real use.
-        </p>
-        <p>
-          Outside of code: food, travel, and a growing tattoo collection. Currently learning to swim.
-        </p>
+           <p>
+              Hi, I'm Tayrine! Born in Brazil and now based in Toronto. I've always been drawn to <span className="highlight">creating</span>,
+              <span className="highlight"> movement</span>, and experiences that
+              feel intentional.
+            </p>
+
+            <p>
+              Outside of work, I spend most of my time around
+              <span className="highlight"> food</span>,
+              <span className="highlight"> travel</span>, and collecting
+              <span className="highlight"> tattoos</span> along the way.
+            </p>
+
+            <p>
+              Lately, I've been learning how to swim — mostly for fun, but also
+              because I enjoy challenging myself in new ways.
+            </p>
+      </div>
+
+      <div className="about-gallery">
+        <img src="/images/about-1.jpg" alt="" />
+        <img src="/images/about-2.jpg" alt="" />
+        <img src="/images/about-3.jpg" alt="" />
+        <img src="/images/about-4.jpg" alt="" />
+        <img src="/images/about-5.jpg" alt="" />
       </div>
     </section>
   );
