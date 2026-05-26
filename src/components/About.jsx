@@ -17,7 +17,7 @@ const About = () => {
             </p>
 
             <p>
-              That's probablt why I spend so much of my time around
+              That's probably why I spend so much of my time around
               <span className="highlight"> food</span>,
               <span className="highlight"> travel</span>, and 
               <span className="highlight"> photography</span>! 
