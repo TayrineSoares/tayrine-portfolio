@@ -13,7 +13,7 @@ const About = () => {
               Hi, I'm <span className="highlight">Tayrine</span>! Originally from Brazil and now based in Toronto. 
             </p>
             <p>
-              I love seeing the world from different perspectives :)
+              I'm curious by nature, I love seeing the world from different angles :)
             </p>
 
             <p>

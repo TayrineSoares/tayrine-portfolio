@@ -72,10 +72,9 @@ const projects = [
 
   {
     title: "KiloBoy Artwork",
-    summary1: "(Under Development)",
+    summary1: "A full-stack e-gallery for a Toronto-based artist.",
     summary2:
-      "A full-stack e-gallery for a Toronto-based artist.",
-      // Created to help his artwork scale and reach people beyond the local scene.
+      "Created to help his artwork scale and reach people beyond the local scene.",
     details: [
       "Custom visual identity with a filterable gallery and detailed artwork pages",
       "Events calendar, custom order requests, and streamlined ordering flow",
